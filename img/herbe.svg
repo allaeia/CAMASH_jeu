@@ -2,6 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+	preserveAspectRatio="xMinYMin meet"
+	viewBox="0 0 700 699.63153"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,12 +11,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   width="100%"
+   height="100%"
    id="svg3035"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 5">
+   sodipodi:docname="herbe.svg">
   <defs
      id="defs3037" />
   <sodipodi:namedview
@@ -24,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="-56.683425"
-     inkscape:cy="273.04774"
+     inkscape:zoom="0.66608907"
+     inkscape:cx="84.579752"
+     inkscape:cy="359.42267"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,10 +37,16 @@
      inkscape:window-height="838"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid3052" />
+       id="grid3052"
+       originx="-32.51751px"
+       originy="-130.10002px" />
   </sodipodi:namedview>
   <metadata
      id="metadata3040">
@@ -48,14 +56,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-32.51751,-397.11847)">
     <path
        style="fill:none;stroke:#000000;stroke-width:4.39094734px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 211.63744,910.04786 C 211.19527,800.0419 81.198198,709.17695 34.712984,707.55054 91.640308,708.62281 146.08454,741.64537 192.49291,813.8949 194.06443,782.66428 132.32244,679.48536 90.189098,619.498 135.71927,656.42938 185.50779,767.07379 222.09228,822.51125 186.07861,658.46151 174.5695,683.31119 97.041608,553.74312 138.78986,584.59611 210.59327,692.11197 261.86943,819.5096 274.18165,702.03288 223.3661,648.35398 148.637,473.11698 219.25705,592.70795 284.19257,716.79876 315.66513,867.38103"

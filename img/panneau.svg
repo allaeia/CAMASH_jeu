@@ -2,6 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+	preserveAspectRatio="xMinYMin meet"
+	viewBox="0 0 700 648.61237"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,8 +11,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   width="100%"
+   height="100%"
    id="svg3002"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -24,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.6357127"
-     inkscape:cx="50.493455"
-     inkscape:cy="478.1149"
+     inkscape:zoom="0.60491611"
+     inkscape:cx="-69.693843"
+     inkscape:cy="372.06141"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,10 +36,20 @@
      inkscape:window-height="838"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid3017" />
+       id="grid3017"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-21.082081px"
+       originy="-97.451909px" />
   </sodipodi:namedview>
   <metadata
      id="metadata3007">
@@ -47,14 +59,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-21.082081,-306.29792)">
     <path
        style="fill:none;stroke:#000000;stroke-width:2.37147808px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 352.17155,613.17765 -0.32561,333.91147 c 35.38888,8.84722 35.38888,8.84722 70.77776,0 L 424.56352,592.90781 682.42904,501.47944 719.89634,374.61603 596.12083,307.48366 22.26782,504.66362 86.82155,704.96701 z"
