@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	<meta charset="UTF-8" />
+		<title>étoile</title>
+	</head>
+	<body>
+		<svg width="60" height="60">	
+			<image x="10" y="10" width="20" height="20" xlink:href="../img/animations/etoile_2.svg"
+			preserveAspectRatio="xMinYMin meet" >
+				<title>etoile 2</title>
+				
+				<! -- <animateTransform id="two"
+					attributeName="transform"
+                    type="rotate"   
+					from="0 20 20" to="360 20 20"
+					begin="0s" dur="5s"
+                    repeatCount="indefinite"
+				/>
+				-->
+				<animateTransform
+				attributeName="transform"type="translate"
+				begin="0s" dur="1s"
+				values="20,20;-10,-10;20 20"
+				repeatCount="indefinite" />
+
+				<animateTransform
+				attributeName="transform" type="scale"
+				additive="sum"
+				begin="0s" dur="1s"
+				values="0;1.5;0" repeatCount="indefinite" />
+			</image>
+
+			<image x="10" y="10" width="20" height="20" xlink:href="../img/animations/etoile_1.svg"
+				preserveAspectRatio="xMinYMin meet" >
+				<title>etoile 1</title>
+				
+				<animateTransform
+				attributeName="transform"type="translate"
+				begin="0s" dur="2s"
+				values="10,10;-10,-10;10 10"
+				repeatCount="indefinite"/>
+
+				<animateTransform
+				attributeName="transform" type="scale"
+				additive="sum"
+				begin="0s" dur="2s"
+				values="0.5;1.5;0.5" repeatCount="indefinite" />
+
+			</image>
+		</svg>		
+	</body>
+</html>
