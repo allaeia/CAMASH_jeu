@@ -2,34 +2,134 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<title>Titre</title>
 	</head>
 	<body>
 	<div>
-		<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 900">
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><!-- onload="init(evt)">
+			<script type="text/ecmascript"><![CDATA[
+				function init(evt) {
+  				svgDocument = evt.target.ownerDocument;
+				}
+			]]></script>-->
+		<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 1200">
 
-			<foreignObject id="paysage" x="0" y="60px" width="100%" height="100%">
+			<foreignObject id="paysage" x="0" y="60px" width="150%" height="100%">
 				<object data="../img/paysage.svg" width="100%"
 					height="100%" type="image/svg+xml">
 						<embed src="../img/paysage.svg" width="100%"
-							height="500" type="image/svg+xml" />
+							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
 			<foreignObject id="soleil" x="5%" y="5%" width="10%" height="100%">
 				<object data="../img/soleil.svg" width="100%"
 					type="image/svg+xml">
 						<embed src="../img/soleil.svg" width="100%"
-							height="500" type="image/svg+xml" />
+							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
-			<foreignObject id="arbre" x="1150px" y="80px"  width="30%" height="100%">
+			<foreignObject id="arbre" x="1150px" y="80px"  width="40%" height="100%">
 				<object data="../img/arbre.svg" width="100%"
 					type="image/svg+xml">
 						<embed src="../img/arbre.svg" width="100%"
-							height="500" type="image/svg+xml" />
+							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
+			<!--<script>
+			var sys = require('sys')
+			var exec = require('child_process').exec;
+			function puts(error, stdout, stderr) { sys.puts(stdout) }
+			exec("ls -la", puts);
+			</script>-->
+			<svg id="panneau_affiche" x="400px" y="300px" width="50%" height="100%" xmlns="http://www.w3.org/2000/svg">
+				<foreignObject id="panneau" x="0px" y="0px"  width="100%" height="100%">
+					<object data="../img/grand_panneau.svg" width="100%"
+						type="image/svg+xml">
+						<embed src="../img/grand_panneau.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<foreignObject id="affiche" x="3%" y="15px"  width="92%" height="100%">
+					<object data="../img/papier.svg" width="100%"
+						type="image/svg+xml">
+							<embed src="../img/papier.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<foreignObject id="herbe2" x="2.8%" y="51%"  width="20%" height="100%">
+					<object data="../img/herbe.svg" width="100%"
+						type="image/svg+xml">
+							<embed src="../img/herbe.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+					<g transform="translate(750,0) scale(-1,1)">
+						<foreignObject id="herbe3" x="0px" y="51.4%"  width="20%" height="100%">
+							<object data="../img/herbe.svg" width="100%"
+								type="image/svg+xml">
+									<embed src="../img/herbe.svg" width="100%"
+										height="100%" type="image/svg+xml" />
+							</object>
+						</foreignObject>
+					</g>
+				</foreignObject>
+			</svg>
+			<foreignObject id="sac" x="2.8%" y="70%"  width="20%" height="100%">
+				<object data="../img/sac.svg" width="100%"
+					type="image/svg+xml">
+						<embed src="../img/sac.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+			</foreignObject>
+			<foreignObject id="test_lettre" x="13%" y="70%"  width="3%" height="100%">
+				<object data="../img/Alphabet/Vectoriel/A.svg" width="100%"
+					type="image/svg+xml">
+						<embed src="../img/Alphabet/Vectoriel/A.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+			</foreignObject>
+			<foreignObject id="panneau_sortie" x="80%" y="70%"  width="20%" height="100%" onclick="">
+				<object data="../img/panneau.svg" width="100%"
+					type="image/svg+xml">
+						<embed src="../img/panneau.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+			</foreignObject>
+			<foreignObject id="" x="80%" y="70%"  width="0%" height="100%">
+				<object data="../img/panneau.svg" width="100%"
+					type="image/svg+xml">
+						<embed src="../img/panneau.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+
+			</foreignObject>
 		</svg>
+		<!--
+		<svg>
+			<script type="text/ecmascript"><![CDATA[
+				function set_size_rect(evt)
+				{
+			/*	
+					//var paysage = document.getElementById("paysage");
+					var paysage = $("#svg1");
+					var rect = $("#rect1");
+//					rect.x="10px";
+					var x = paysage.outerWidth();
+console.log(x);
+console.log(paysage);
+console.log(rect);
+console.log(paysage.outerWidth(true));
+					rect.attr('x',"200px");					
+//rect.animate({x: "+=500px"},100);
+//*/
+				}
+			]]></script>
+		<rect id="rect1" onresize="set_size_rect(evt)" onload="set_size_rect(evt)"
+		x="100%" y="55%" width="100%" height="36%"
+		style="fill:rgb(170,222,135)"/>
+	-->	
+	</svg>
 	</div>
 
 <!--	<script>var svg = document.getElementsByTagName('object')[0].contentDocument.getElementsByTagName('svg')[0];
