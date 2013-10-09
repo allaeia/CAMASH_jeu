@@ -7,10 +7,40 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="210mm"
-   height="297mm"
-   id="svg3000">
+   preserveAspectRatio="xMinYMin meet"
+   viewBox="0 0 628.07489 1000"
+   width="100%"
+   height="100%"
+   id="svg3000"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="E.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3013"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.22425739"
+     inkscape:cx="315.58953"
+     inkscape:cy="504.80159"
+     inkscape:window-x="200"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3000" />
   <defs
      id="defs3002" />
   <metadata
@@ -21,15 +51,17 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1">
+     id="layer1"
+     transform="translate(-56.457711,-30.982697)">
     <path
        d="M 145.82716,46.69572 C 15.901276,412.85392 75.838456,705.17663 82.466146,1018.2307 280.99714,1014.0066 493.2962,1041.9077 678.05937,1005.5585 L 577.34361,781.67003 c -53.93648,43.86256 -117.0638,73.01973 -191.41314,84.22181 -135.68861,-12.11066 -148.53075,-97.16143 -156.193,-185.2879 9.27124,-99.02858 54.31698,-106.06564 90.34692,-136.2861 62.23583,-10.65949 114.37469,-5.16397 156.19313,16.84441 46.07693,-54.24616 51.82142,-131.5394 71.97133,-200.601 -72.88172,-21.9909 -149.76728,-23.96213 -238.88363,35.22001 -124.33624,22.78128 -66.00934,-142.19863 -55.12691,-163.84956 63.34896,-64.58988 110.22922,-46.83663 162.31824,-55.12704 55.84803,7.53524 106.97616,29.22993 154.66182,61.25228 L 660.03411,45.11249 160.82877,37.45594 z"
        id="path2987"
-       style="fill:none;stroke:#000000;stroke-width:12.94648552px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:12.94648552px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

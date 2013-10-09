@@ -9,12 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   preserveAspectRatio="xMinYMin meet"
+   viewBox="0 0 700 765.73273"
+   width="100%"
+   height="100%"
    id="svg3045"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 6">
+   sodipodi:docname="M.svg">
   <defs
      id="defs3047" />
   <sodipodi:namedview
@@ -25,16 +27,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.61860832"
-     inkscape:cx="372.04724"
-     inkscape:cy="526.18109"
+     inkscape:cx="343.59924"
+     inkscape:cy="458.88843"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1400"
+     inkscape:window-height="881"
+     inkscape:window-x="200"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata3050">
     <rdf:RDF>
@@ -43,14 +49,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-28.447998,-219.33679)">
     <path
        style="fill:none;stroke:#000000;stroke-width:9.9648571px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 61.970392,974.11739 c 5.969752,0 161.182768,-2.3878 161.182768,-2.3878 -62.58548,-212.84078 -61.72622,-542.58291 -41.78813,-545.63346 54.9833,12.62399 104.52567,201.53606 143.27353,319.97757 49.8494,106.33778 73.71859,60.18139 88.35201,33.4305 61.9382,-251.743 95.31327,-311.50385 139.69165,-355.79595 54.2161,99.99247 8.44465,383.28809 -31.0426,551.60314 l 163.57065,4.7757 c 66.93836,-367.89225 31.3295,-682.30036 3.58186,-755.76787 l -154.01902,7.16373 C 465.74224,275.69713 428.05525,382.59882 375.97821,460.72063 329.39718,375.5742 281.17853,254.39784 237.48043,232.67685 L 69.134129,231.48295 C 13.088885,463.14059 32.811725,900.99794 61.970392,974.11739 z"
