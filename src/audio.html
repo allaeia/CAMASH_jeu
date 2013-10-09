@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	<meta charset="UTF-8" />
+		<title>audio</title>
+	</head>
+	<body>
+	test
+		<script src="/audiojs/audio.min.js"></script>
+		<script>
+		  audiojs.events.ready(function() {
+			var as = audiojs.createAll();
+		  });
+		</script>
+		<script>
+		var audioElement = document.createElement('audio');
+		audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22Bonjour%22");
+		document.write("<br>");
+		if(navigator.userAgent.indexOf("OPR")==109)
+		{
+			document.write("vous etes sous opera");
+		}
+		else
+		{
+			document.write("vous n etes pas sous opera");
+		}//IE : "MSIE"; Firefox : "Firefox"; Chrome : sinon (il a les meme tags que Opera)
+		audioElement.setAttribute("type","audio/ogg");
+		document.write("<br>");
+		document.write(audioElement.getAttribute("type"));
+		audioElement.play();
+		</script>
+	</body>
+</html>
