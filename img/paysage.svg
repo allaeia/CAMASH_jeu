@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1222.9063 346.43781"
+   viewBox="0 0 1226.9654 588.50173"
    width="100%"
    height="100%"
    id="svg3600"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1906063"
-     inkscape:cx="611.45315"
-     inkscape:cy="5.2372704"
+     inkscape:zoom="0.84188582"
+     inkscape:cx="562.06403"
+     inkscape:cy="194.45829"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,7 +57,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(4.5625464,-342.28093)">
+     transform="translate(4.5590519,-342.28128)">
     <g
        id="g6056">
       <path
@@ -110,5 +110,5 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="premier plan"
-     transform="translate(4.5625464,-342.28093)" />
+     transform="translate(4.5590519,-342.28128)" />
 </svg>
