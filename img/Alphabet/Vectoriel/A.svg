@@ -9,8 +9,10 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   preserveAspectRatio="xMinYMin meet"
+   viewBox="0 0 737.50641 1049.4573"
+   width="100%"
+   height="100%"
    id="svg3020"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -25,16 +27,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.61860832"
-     inkscape:cx="372.04724"
-     inkscape:cy="526.18109"
+     inkscape:cx="369.84177"
+     inkscape:cy="525.25185"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1400"
+     inkscape:window-height="881"
+     inkscape:window-x="200"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata3025">
     <rdf:RDF>
@@ -49,7 +55,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-2.20547,-1.9756915)">
     <path
        style="fill:none;stroke:#000000;stroke-width:13.2062912px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 63.114197,1044.8298 258.5614,1043.2157 C 224.61454,947.051 194.97802,848.43967 205.8217,726.85255 c 32.36522,-20.2959 58.0513,-67.01483 308.6826,-66.17811 97.10574,85.12324 -8.62818,250.30686 -18.61405,377.69906 L 708.4004,1027.0748 C 809.62346,393.97624 577.76908,71.081391 412.12709,8.5788371 174.61945,112.24656 -112.78126,594.49794 63.114197,1044.8298 z"
