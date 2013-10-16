@@ -4,31 +4,21 @@
 	<meta charset="UTF-8" />
 		<title>audio</title>
 	</head>
-	<body>
-	test
-	<audio controls="controls" autoplay="autoplay" style="display:none;">
-      <source src="http://translate.google.com/translate_tts?tl=fr&q=%22Bonjour%22" type="audio/mpeg" />
-    </audio>
-		<!--
+	<body>		
 		<script>
+		var message = "Bonjour%20tout%20le%20monde";
 		var audioElement = document.createElement('audio');
 		audioElement.setAttribute('user-agent', navigator.userAgent);
-		audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22Bonjour tout le monde%22");
-		document.write("<br>");
+		audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
 		if(navigator.userAgent.indexOf("OPR")==109)
 		{
-			document.write("vous etes sous opera");
+			document.write("Vous etes sous opera. Cette synthese vocale a ete cree pour Firefox, Chrome ou Safari");
 		}
 		else
 		{
-			document.write("vous n etes pas sous opera");
-		}//IE : "MSIE"; Firefox : "Firefox"; Chrome : sinon (il a les meme tags que Opera)
-		audioElement.setAttribute("type","audio/ogg");
-		document.write("<br>");
-		document.write(audioElement.getAttribute("type"));
-		audioElement.type= "audio/mpeg";
-		audioElement.play();//marche pas sous Opera, Safari, IE, en fait ça marche pas sous grand chose...
-		//pour info Safari ne supporte carrement pas les audio tag... ><
-		</script>-->
+			audioElement.play();//marche pas sous Opera, IE
+		}
+		//pour info Safari lis les audio tag si QuickTime est installé
+		</script>
 	</body>
 </html>
