@@ -1,18 +1,29 @@
 <!DOCTYPE html>
+<!--
+@authors : Guenon Marie et Favreau Jean-Dominique
+VIM / Master SSTIM
+@date : 16 / 10 /2013
+-->
 <html lang="fr">
 	<head>
 	<meta charset="UTF-8" />
 		<title>audio</title>
 	</head>
-	<body>		
+	<body>
+		<!--
+		Attention !! : Ce script de synthese vocale marche sous Firefox,et Chrome.
+		Il marche aussi sous Safari a condition que QuickTime soit installe sur votre machine
+		Cette synthese n'est carrement pas supportee par Opera et Internet Explorer
+		-->
 		<script>
-		var message = "Bonjour%20tout%20le%20monde";
+		<!--Les espaces sont ici mis en %20 a titre indicatif-->
+		var message = "Bonjour%20tout%20le%20monde%20!";
 		var audioElement = document.createElement('audio');
 		audioElement.setAttribute('user-agent', navigator.userAgent);
 		audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
 		if(navigator.userAgent.indexOf("OPR")==109)
 		{
-			document.write("Vous etes sous opera. Cette synthese vocale a ete cree pour Firefox, Chrome ou Safari");
+			document.write("Vous etes sous opera.<br />Cette synthese vocale a ete cree et optimisee pour Firefox, Chrome ou Safari");
 		}
 		else
 		{

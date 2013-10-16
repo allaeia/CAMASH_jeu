@@ -5,41 +5,36 @@
 		<title>audio</title>
 	</head>
 	<body>
-	test
 	<?php
 		$q='Bonjour%20tout%20le%20monde';
-		$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
-		$opts = array(
-		  'http'=>array(
-			'method'=>"GET",
-			'header'=>"Accept-language: fr\r\n" .
-					  "Cookie: foo=bar\r\n" .
-					  "User-Agent: ". $_SERVER['HTTP_USER_AGENT']
-		  )
-		);
-		
-		$context = stream_context_create($opts);
-		$urlContents = file_get_contents($url, false, $context);
-		if(strpos($_SERVER['HTTP_USER_AGENT'],'OPR/')
-		|| strpos($_SERVER['HTTP_USER_AGENT'],'Safari/')) {
-			echo "Vous utilisez Opera ou Safari";
-			//il faut faire la conversion
+		$r=str_replace("%20","_",$q);
+		$nom_mp3='./snd/'.$r.'.mp3';
 			
-			
+		if(strpos($_SERVER['HTTP_USER_AGENT'],'OPR/')) {
 			$r=str_replace("%20","_",$q);
 			$nom='./snd/'.$r.'.wav';
-			file_put_contents($nom,$urlContents);
+			$type="x-wav";
+			if(! file_exists($nom)) { //on ne re-telecharge que si on a pas deja telecharge le fichier audio
+				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
+				$urlContents = file_get_contents($url);
+				// /!\ changer "C:/ffmpeg/bin/ffmpeg" en fonction de l'endroit de ou il est instale
+				$ligne_commande="C:/ffmpeg/bin/ffmpeg -i ".$nom_mp3." -acodec pcm_s16le ".$nom;
+				exec($ligne_commande);
+			}
 		} else {
-			echo "Vous n utilisez pas ni Opera, ni Safari";
-			$r=str_replace("%20","_",$q);
-			$nom='./snd/'.$r.'.mp3';
-			file_put_contents($nom,$urlContents);
+		//penser a installer QuickTime pour faire marcher la balise sous Safari
+			$type="mpeg";
+			if(! file_exists($nom)) {
+				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
+				$urlContents = file_get_contents($url);
+				file_put_contents($nom_mp3,$urlContents);
+			}
 		}
 	?>
  
 <!-- Embed the MP3 file using the AUDIO tag of HTML5 -->
 <audio controls="controls" autoplay="autoplay" style="display:none;">
-  <source src="<?php echo $nom; ?>" type="audio/mp3" />
+  <source src="<?php echo $nom; ?>" type='audio/<?php echo $type; ?>' />
 </audio>
 	</body>
 </html>
