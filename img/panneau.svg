@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.8140375"
-     inkscape:cx="-47.38476"
-     inkscape:cy="443.47721"
+     inkscape:zoom="1.0314327"
+     inkscape:cx="176.93975"
+     inkscape:cy="324.30619"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,5 +80,17 @@
        id="path5433"
        inkscape:connector-curvature="0"
        transform="translate(21.082081,306.29792)" />
+    <text
+       xml:space="preserve"
+       style="font-size:186.52757263px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-119.37504"
+       y="657.73608"
+       id="text3023"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.95453185,-0.34311311,0.35614002,0.91961697,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3025"
+         x="-119.37504"
+         y="657.73608">Retour</tspan></text>
   </g>
 </svg>
