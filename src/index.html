@@ -1,13 +1,22 @@
 <!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<script type="text/javascript" src="../js/js.js"></script>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<title>Titre</title>
+	<script>
+		function setup()
+		{
+			setup2(document);
+		}
+		</script>
 	</head>
-	<body>
-	<div>
+	<body onLoad="setup();">
+	<div id="ma_div">
 		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><!-- onload="init(evt)">
+		<svg onclick='alert("a")' id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><!-- onload="init(evt)">
 			<script type="text/ecmascript"><![CDATA[
 				function init(evt) {
   				svgDocument = evt.target.ownerDocument;
@@ -73,7 +82,6 @@
 							</object>
 						</foreignObject>
 					</g>
-				</foreignObject>
 			</svg>
 			<foreignObject id="sac" x="2.8%" y="70%"  width="20%" height="100%">
 				<object data="../img/sac.svg" width="100%"
@@ -82,27 +90,57 @@
 							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
-			<foreignObject id="test_lettre" x="13%" y="70%"  width="3%" height="100%">
-				<object data="../img/Alphabet/Vectoriel/A.svg" width="100%"
+			<!--
+			<foreignObject id="test_lettre" x="208px" y="840px"  width="3%" height="100%">
+				<object id="test_lettre_obj" data="../img/Alphabet/Vectoriel/A.svg" width="100%"
 					type="image/svg+xml">
 						<embed src="../img/Alphabet/Vectoriel/A.svg" width="100%"
 							height="100%" type="image/svg+xml" />
 				</object>
+				
+			</foreignObject>-->
+			<!--
+			<object id="test_lettre" x="13%" y="70%"  width="3%" height="100%"
+			        data="../img/Alphabet/Vectoriel/A.svg"
+					type="image/svg+xml">
+						<embed src="../img/Alphabet/Vectoriel/A.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+				
 			</foreignObject>
+			-->
+			<!--
+			<script type="text/javascript"> <![CDATA[
+			 var elem = document.getElementById('test_lettre').childNodes;
+			var i;
+			for (i=0;i<elem.length;i++){
+				elem[i].addEventListener('click', 'test');
+			console.log(elem[i]);
+			elem[i].onclick = "alert('aa')";
+        }
+		
+		document.getElementById('test_lettre').addEventListener("click",test,false);
+		
+    function test(e) {
+        alert("aa");
+    }
+			]]> </script>-->
+			<script>
+				//var lettre = $("#test_lettre");
+				//lettre.addEventListener('click','alert("b")',false);
+			</script>
+			
+			
+			
+			
+			
+			
 			<foreignObject id="panneau_sortie" x="80%" y="70%"  width="20%" height="100%" onclick="">
 				<object data="../img/panneau.svg" width="100%"
 					type="image/svg+xml">
 						<embed src="../img/panneau.svg" width="100%"
 							height="100%" type="image/svg+xml" />
 				</object>
-			</foreignObject>
-			<foreignObject id="" x="80%" y="70%"  width="0%" height="100%">
-				<object data="../img/panneau.svg" width="100%"
-					type="image/svg+xml">
-						<embed src="../img/panneau.svg" width="100%"
-							height="100%" type="image/svg+xml" />
-				</object>
-
 			</foreignObject>
 		</svg>
 		<!--
