@@ -7,7 +7,7 @@ VIM / Master SSTIM
 <html lang="fr">
 	<head>
 	<meta charset="UTF-8" />
-		<title>audio</title>
+		<title>audio2</title>
 	</head>
 	<body>
 		<!--
@@ -23,12 +23,14 @@ VIM / Master SSTIM
 		if(navigator.userAgent.indexOf("Safari"))
 		{
 			audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
+			audioElement.setAttribute('type', "audio/mpeg");
 			audioElement.play();
 		}
 		else
 		{
 			audioElement.setAttribute('src', "http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&src=%22"+message+"%22&c=wav");
-			audioElement.play();//marche pas sous Opera, IE
+			audioElement.setAttribute('type', "audio/wav");
+			audioElement.play();
 		}
 		//pour info Safari lis les audio tag si QuickTime est installé
 		</script>
