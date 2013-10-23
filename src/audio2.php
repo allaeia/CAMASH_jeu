@@ -10,12 +10,14 @@
 			$q='Bonjour%20tout%20le%20monde';
 			$r=str_replace("%20","_",$q);
 			$nom_mp3='./snd/'.$r.'.mp3';
-			if(strpos($_SERVER['HTTP_USER_AGENT'],'Safari') && !strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')) {
+			if(strpos($_SERVER['HTTP_USER_AGENT'],'Safari') && strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')=="") {
 				$type="mpeg";
 				if(! file_exists($nom_mp3)) {
 					$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
-					exec('wget --user-agent=" " "'.$url.'" -O "'.$nom_mp3.'"');
+					$commande ='wget --user-agent=" " "'.$url.'" -O "'.$nom_mp3.'"';
+					exec($commande);
 				}
+				$nom=$nom_mp3;
 			}
 			else
 			{
@@ -25,7 +27,6 @@
 					$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&src=%22'.$q.'%22&c=wav';
 					$commande = 'wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 					exec($commande);
-					//echo $commande;
 				}
 			}		
 		?>
