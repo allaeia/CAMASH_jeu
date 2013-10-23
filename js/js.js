@@ -105,10 +105,15 @@ function tirer_lettre(n)
 {
 	var n_total = n;
 	var i = 0;
-	var lettre='A';
+	var tab = [];
 	while(n!=0)
 	{
-	
+		var lettre = non_uniforme();
+		while(tab.indexOf(lettre)!=-1)
+		{
+			lettre=non_uniforme(); 
+		}
+		tab.push(lettre);
 		i=i+1;
 		n--;
 	
