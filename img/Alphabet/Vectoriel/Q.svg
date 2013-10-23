@@ -77,4 +77,36 @@
        inkscape:connector-curvature="0"
        transform="translate(18.76463,36.523352)" />
   </g>
+    <script>
+	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
+	function sendClickToParentDocument(evt)
+		{
+			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
+			var target = evt.target;
+			if(target.correspondingUseElement)
+				target = target.correspondingUseElement;
+      
+      // call a method in the parent document if it exists
+      if (window.parent.svgElementClicked)
+				window.parent.svgElementClicked(target);
+			else
+				alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
+		}
+  </script>
+  <!--
+  <script xlink:href="../../../src/js.js"/>
+  <script>
+	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
+	function sendClickToParentDocument(evt)
+		{
+			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
+			var target = evt.target;
+			if(target.correspondingUseElement)
+				target = target.correspondingUseElement;
+				
+				//svgElementClicked(target);
+				top.svgElementClicked(target);
+			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
+		}
+  </script>-->
 </svg>
