@@ -19,10 +19,10 @@ VIM / Master SSTIM
 		<!--Les espaces sont ici mis en %20 a titre indicatif-->
 		var message = "Bonjour%20tout%20le%20monde%20!";
 		var audioElement = document.createElement('audio');
-		document.write(navigator.userAgent.indexOf("Safari"));
-		if(navigator.userAgent.indexOf("Safari")!=-1)
+		//document.write(navigator.userAgent);
+		if(navigator.userAgent.indexOf("Safari")!=-1 && navigator.userAgent.indexOf("Chrome")==-1)
 		{
-			document.write("Safari");
+			//document.write("Safari");
 			audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
 			audioElement.setAttribute('type', "audio/mpeg");
 			audioElement.play();
