@@ -117,79 +117,79 @@ function tirer_lettre(n)
 		i=i+1;
 		n--;
 	
-	//$("#svg1").append('<foreignObject id="lettre_'+i+'" x="13%" y="70%"  width="3%" height="100%">                                <object id="obj_lettre_'+i+'" data="../img/Alphabet/Vectoriel/'+lettre+'.svg" width="100%" type="image/svg+xml">                                	        <embed src="../img/Alphabet/Vectoriel/A.svg" width="100%" height="100%" type="image/svg+xml" /></object></foreignObject>');
-/*	var foreign_object = makeSVG('foreignObject',{id:'lettre_'+i, x:'13%', y:'70%', width:'3%', height:'100%'});
-	var obj = makeSVG('object',{id:"obj_lettre_'+i+'", data:'"../img/Alphabet/Vectoriel/'+lettre+'.svg"', width:"100%", type:"image/svg+xml"})
-	document.getElementById('svg1').appendChild(foreign_object);
-	document.getElementById('lettre_'+i).appendChild(obj);
-//*/
-	
+		//$("#svg1").append('<foreignObject id="lettre_'+i+'" x="13%" y="70%"  width="3%" height="100%">                                <object id="obj_lettre_'+i+'" data="../img/Alphabet/Vectoriel/'+lettre+'.svg" width="100%" type="image/svg+xml">                                	        <embed src="../img/Alphabet/Vectoriel/A.svg" width="100%" height="100%" type="image/svg+xml" /></object></foreignObject>');
+	/*	var foreign_object = makeSVG('foreignObject',{id:'lettre_'+i, x:'13%', y:'70%', width:'3%', height:'100%'});
+		var obj = makeSVG('object',{id:"obj_lettre_'+i+'", data:'"../img/Alphabet/Vectoriel/'+lettre+'.svg"', width:"100%", type:"image/svg+xml"})
+		document.getElementById('svg1').appendChild(foreign_object);
+		document.getElementById('lettre_'+i).appendChild(obj);
+	//*/
+		
 
-	
+		
 
-	var elem = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
-	elem.setAttribute("id","lettre_"+i)
-	elem.setAttribute("x","208px")
-	elem.setAttribute("y","840px")
-	//elem.setAttribute("x","13%")
-	//elem.setAttribute("y","70%")
-	elem.setAttribute("width","3%")
-	elem.setAttribute("height","100%");
-	//var obj = document.createElementNS('http://www.w3.org/2000/svg', 'object');
-	var obj = document.createElement('object',true);
-	//var obj = document.createElement('embed',true);
-	
-	$(elem).append(obj);
-	$("#svg1").append(elem);
+		var elem = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
+		elem.setAttribute("id","lettre_"+i)
+		elem.setAttribute("x","208px")
+		elem.setAttribute("y","840px")
+		//elem.setAttribute("x","13%")
+		//elem.setAttribute("y","70%")
+		elem.setAttribute("width","3%")
+		elem.setAttribute("height","100%");
+		//var obj = document.createElementNS('http://www.w3.org/2000/svg', 'object');
+		var obj = document.createElement('object',true);
+		//var obj = document.createElement('embed',true);
+		
+		$(elem).append(obj);
+		$("#svg1").append(elem);
 
-	var elem_2 = document.getElementById("lettre_"+i);
-	elem_2.style.display='none';
+		var elem_2 = document.getElementById("lettre_"+i);
+		elem_2.style.display='none';
 
-	obj.setAttribute("id","obj_lettre_"+i)
-	obj.setAttribute("width","100%")
-	obj.setAttribute("height","100%");
-	obj.setAttribute("data","../img/Alphabet/Vectoriel/"+lettre+".svg");
-//	obj.setAttribute("src","../img/Alphabet/Vectoriel/"+lettre+".svg");
-	obj.setAttribute("type","image/svg+xml");
-	
-
-
-	
-	elem_2.style.display='';
-	
-	var obj_2 = document.getElementById("obj_lettre_"+i);
-	elem_2.replaceChild(obj_2,obj_2);
+		obj.setAttribute("id","obj_lettre_"+i)
+		obj.setAttribute("width","100%")
+		obj.setAttribute("height","100%");
+		obj.setAttribute("data","../img/Alphabet/Vectoriel/"+lettre+".svg");
+	//	obj.setAttribute("src","../img/Alphabet/Vectoriel/"+lettre+".svg");
+		obj.setAttribute("type","image/svg+xml");
+		
 
 
-	
-	//1600*50/100
-	var w_pan = parseInt($("#panneau_affiche").attr("width").split("%")[0])/100;
-	var x_pan = parseInt($("#panneau_affiche").attr("x").split("px")[0]);
-	var x_affiche = parseInt($("#affiche").attr("x").split("%")[0])*w_pan/100*1600+x_pan;
-	
-	var h_pan = parseInt($("#panneau_affiche").attr("height").split("%")[0])/100;
-	var y_pan = parseInt($("#panneau_affiche").attr("y").split("px")[0]);
-	var y_affiche = parseInt($("#affiche").attr("y").split("px")[0])+y_pan;
-	
-	var x = x_affiche + w_pan*1600/(n_total+2)*(i);
-	var y = y_affiche + h_pan*1200/2/2/2;
-	console.log(x_affiche);
-	console.log(y_affiche);
-	console.log(x);
-	console.log(y);
-console.log(n_total+1);
-console.log(i+1);
-	console.log(w_pan*1600/(n_total+1)*(i+1))
-	
-	//anim2($(elem),x,y);
+		
+		elem_2.style.display='';
+		
+		var obj_2 = document.getElementById("obj_lettre_"+i);
+		elem_2.replaceChild(obj_2,obj_2);
 
-	
-	//anim2($(elem),x,y);
-//	$(elem).attr("x",x+"px")
-//	$(elem).attr("y",y+"px")
-//	anim($(elem),0,50,f);
-	anim2($(elem),x,y);
-}
+
+		
+		//1600*50/100
+		var w_pan = parseInt($("#panneau_affiche").attr("width").split("%")[0])/100;
+		var x_pan = parseInt($("#panneau_affiche").attr("x").split("px")[0]);
+		var x_affiche = parseInt($("#affiche").attr("x").split("%")[0])*w_pan/100*1600+x_pan;
+		
+		var h_pan = parseInt($("#panneau_affiche").attr("height").split("%")[0])/100;
+		var y_pan = parseInt($("#panneau_affiche").attr("y").split("px")[0]);
+		var y_affiche = parseInt($("#affiche").attr("y").split("px")[0])+y_pan;
+		
+		var x = x_affiche + w_pan*1600/(n_total+2)*(i);
+		var y = y_affiche + h_pan*1200/2/2/2;
+		console.log(x_affiche);
+		console.log(y_affiche);
+		console.log(x);
+		console.log(y);
+		console.log(n_total+1);
+		console.log(i+1);
+		console.log(w_pan*1600/(n_total+1)*(i+1))
+		
+		//anim2($(elem),x,y);
+
+		
+		//anim2($(elem),x,y);
+	//	$(elem).attr("x",x+"px")
+	//	$(elem).attr("y",y+"px")
+	//	anim($(elem),0,50,f);
+		anim2($(elem),x,y);
+	}
 //	$(obj).attr("x",$(obj).attr("x"))
 
 //	$("#svg1").attr("width","50%");
