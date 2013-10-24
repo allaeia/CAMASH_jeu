@@ -189,6 +189,8 @@ function tirer_lettre(n)
 	//	$(elem).attr("y",y+"px")
 	//	anim($(elem),0,50,f);
 		anim2($(elem),x,y);
+		document.write('<audio controls="controls" autoplay="autoplay" style="display:none;">');
+		document.write('<source src="audio2.php?mot='+lettre+' type="audio/ /></audio>');
 	}
 //	$(obj).attr("x",$(obj).attr("x"))
 
