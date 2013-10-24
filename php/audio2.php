@@ -25,6 +25,11 @@
 	}
 ?>
 
+<?php
+	$tmp=lecture($_GET["mot"]);
+	echo "<source src="$tmp(0)" type='audio/"$tmp(1)"' />";
+?>
+
 
 <!-- Voice RSS informer code 
 <br />
