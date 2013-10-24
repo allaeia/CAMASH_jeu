@@ -10,15 +10,15 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 270.64493 1000"
+   viewBox="0 0 754.4762 1051.875"
    width="100%"
    height="100%"
-   id="svg3000"
+   id="svg3121"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="I.svg">
+   sodipodi:docname="Nouveau document 3">
   <defs
-     id="defs3002" />
+     id="defs3123" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,30 +26,30 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.94199219"
-     inkscape:cx="127.59013"
-     inkscape:cy="490.02997"
+     inkscape:zoom="0.44951676"
+     inkscape:cx="-150.10634"
+     inkscape:cy="548.72554"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:window-width="1600"
      inkscape:window-height="838"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata3005">
+     id="metadata3126">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,21 +57,15 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-247.40987,-22.39214)">
+     transform="translate(0.91370454,-2.21875)">
     <path
-       style="fill:none;stroke:#000000;stroke-width:12.95290279px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 308.27138,28.868591 C 251.82677,325.77633 227.2774,641.82134 294.30375,1012.8117 l 217.27459,3.104 C 453.22965,681.23663 420.87563,339.08855 510.02632,41.284341 z"
+       style="fill:#00ff00;stroke:#000000;stroke-width:12.95290279px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 5.611678,8.647522 c 12.299876,7.08119 12.10749,151.668378 1.0846067,139.416418 -8.5222178,-9.47247 238.3394953,-9.2906 231.4774853,22.01344 -48.89017,223.0338 -28.1479,480.09473 -10.76493,750.24433 2.44754,38.03734 -228.5265691,6.34968 -221.6996306,-2.61294 11.8768816,-15.59234 26.4630486,116.82493 0.8786966,129.93823 246.866944,-27.7264 489.675634,-14.8702 732.444414,-1.6151 -23.36144,-27.954 5.13361,-136.82725 -2.53575,-124.55257 -28.35954,45.38898 -290.81601,9.08823 -295.03492,-12.17369 C 392.15666,660.8244 387.18169,413.34271 421.08152,180.50748 427.68766,135.13433 740.33641,168.48524 732.62542,176.45342 714.53454,195.14768 701.2028,31.189667 732.76119,10.838532 490.37802,46.20308 247.99485,40.316317 5.611678,8.647522 z"
        id="path2987"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="color:#000000;fill:#7fff2a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 136.55218,984.82008 c -45.692317,-0.69325 -83.258208,-1.45577 -83.479759,-1.69449 -0.221552,-0.23871 -2.84878,-15.24306 -5.838285,-33.343 C 29.786637,844.14684 19.27694,740.19484 15.196946,632.90099 13.439884,586.69454 13.726248,485.02281 15.736641,441.28581 21.944606,306.22876 35.514818,187.58709 61.118604,44.52031 l 5.462054,-30.520423 2.744421,0.04549 c 10.05309,0.166629 182.713001,11.308814 183.228381,11.824195 0.35393,0.353931 -0.83763,5.728 -2.64791,11.942376 -5.38368,18.481162 -15.5185,61.02815 -20.62654,86.592252 -21.8487,109.34563 -30.58526,218.93391 -28.10859,352.58361 1.46169,78.8776 5.65461,144.04437 14.81291,230.22377 8.00881,75.36273 22.53843,178.73153 36.37159,258.76011 l 3.53231,20.43541 -18.12905,-0.16327 c -9.97099,-0.0898 -55.51369,-0.73048 -101.206,-1.42375 l 0,0 z"
-       id="path3102"
-       inkscape:connector-curvature="0"
-       transform="translate(247.40987,22.39214)" />
+       sodipodi:nodetypes="cssssccsssscc" />
   </g>
-    <script>
+   <script>
 	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
 	function sendClickToParentDocument(evt)
 		{
