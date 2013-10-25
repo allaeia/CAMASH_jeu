@@ -103,11 +103,11 @@ function makeSVG(tag, attrs) {
 
 function tirer_lettre(n)
 {
-	var n_total = n;
-	var i = 0;
 	var tab = [];
-	while(n!=0)
-	{
+	tirer_lettre_2(n,0,tab)
+}
+function tirer_lettre_2(n_total,i,tab)
+{
 		var lettre = non_uniforme();
 		while(tab.indexOf(lettre)!=-1)
 		{
@@ -115,7 +115,6 @@ function tirer_lettre(n)
 		}
 		tab.push(lettre);
 		i=i+1;
-		n--;
 	
 		//$("#svg1").append('<foreignObject id="lettre_'+i+'" x="13%" y="70%"  width="3%" height="100%">                                <object id="obj_lettre_'+i+'" data="../img/Alphabet/Vectoriel/'+lettre+'.svg" width="100%" type="image/svg+xml">                                	        <embed src="../img/Alphabet/Vectoriel/A.svg" width="100%" height="100%" type="image/svg+xml" /></object></foreignObject>');
 	/*	var foreign_object = makeSVG('foreignObject',{id:'lettre_'+i, x:'13%', y:'70%', width:'3%', height:'100%'});
@@ -190,7 +189,10 @@ function tirer_lettre(n)
 	//	anim($(elem),0,50,f);
 		anim2($(elem),x,y);
 		ajax_lecture(lettre);
-	}
+		if(i<n_total)
+		{
+			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab)},2000);
+		}
 //	$(obj).attr("x",$(obj).attr("x"))
 
 //	$("#svg1").attr("width","50%");
@@ -205,8 +207,7 @@ function ajax_lecture(lettre)
 		url: "../php/audio2.php",
 		data: "mot="+lettre,
 		success: function(msg){
-			document.write('<audio controls="controls" autoplay="autoplay" style="display:none;">');
-			document.write(msg+'</audio>');
+			$("#ma_div").append('<audio controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>');
 		}
 	});
 }
