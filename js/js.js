@@ -172,14 +172,14 @@ function tirer_lettre_2(n_total,i,tab)
 		
 		var x = x_affiche + w_pan*1600/(n_total+2)*(i);
 		var y = y_affiche + h_pan*1200/2/2/2;
-		console.log(x_affiche);
-		console.log(y_affiche);
-		console.log(x);
-		console.log(y);
-		console.log(n_total+1);
-		console.log(i+1);
-		console.log(w_pan*1600/(n_total+1)*(i+1))
-		
+		//console.log(x_affiche);
+		//console.log(y_affiche);
+		//console.log(x);
+		//console.log(y);
+		//console.log(n_total+1);
+		//console.log(i+1);
+		//console.log(w_pan*1600/(n_total+1)*(i+1))
+		//console.log(lettre);
 		//anim2($(elem),x,y);
 
 		
