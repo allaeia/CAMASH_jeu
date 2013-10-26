@@ -72,7 +72,7 @@
        transform="translate(21.481568,42.812005)" />
   </g>
     <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
+	document.getElementById("svg3076").addEventListener("click",sendClickToParentDocument,false);
 	function sendClickToParentDocument(evt)
 		{
 			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead

@@ -73,7 +73,7 @@
   </g>
   <script
      id="script3948">
-	document.getElementById(&quot;svg3020&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
+	document.getElementById(&quot;svg3045&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
 	function sendClickToParentDocument(evt)
 		{
 			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
