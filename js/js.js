@@ -1,4 +1,84 @@
 var doc;
+var tab2 = [];
+var lettre_a_trouver;
+function Lettre(obj,lettre){
+	this.lettre = lettre;
+	this.obj = obj;
+	this.move = false;
+	this.in_move = false;
+	this.xfin = 0;
+	this.yfin = 0;
+	this.step = 0;
+	this.len = 0;
+	this.curv = function(){};
+	this.stop = function(){this.anim=function(){};};
+	this.anim_function = function(){};;
+	this.anim_2 = function(){
+		this.in_move=false;
+		if(this.move==false)
+		{
+			return;
+		}
+		this.anim_function();
+		if(this.move==true)
+		{
+			var that = this;
+			this.in_move=true;
+			window.setTimeout(function(){that.anim_2()},50);
+		}
+	};
+	this.anim = function(){
+		if(this.in_move==false)
+			this.anim_2();
+	};
+	this.anim1 = function (){
+
+		var x0 = parseInt(this.obj.attr('x').split("px")[0]);
+		var y0 = parseInt(this.obj.attr('y').split("px")[0]);
+		var x = x0+(this.xfin-x0)*this.step/this.len;
+		var y = y0+(this.yfin-y0)*this.step/this.len;
+		if(Math.abs(this.xfin-x)<1)
+			x=this.xfin;
+		if(Math.abs(this.yfin-y)<1)
+			y=this.yfin;
+		
+		this.obj.attr('x',x);
+		this.obj.attr('y',y);
+		this.step++;
+	//jquerry animate->plus fluide
+	//OR path svg animate
+		if(this.step<this.len&&(x!=this.xfin||y!=this.yfin)&&this.move==true)
+		{
+		//	this.in_move=true;
+		//	var that = this;
+		//	window.setTimeout(function(){that.anim()},50);
+		}
+		else
+		{
+			this.move = false;
+		}
+	};
+	this.anim2 = function(){
+		var x = parseInt(this.obj.attr('x').split("px")[0]);
+		var y = parseInt(this.obj.attr('y').split("px")[0]);
+		var r = this.curv(x,y);
+		this.obj.attr('x',r.x+"px");
+		this.obj.attr('y',r.y+"px");
+		this.step++;
+//jquerry animate->plus fluide
+//OR path svg animate
+		if(this.step<this.len&&this.move==true)
+		{
+		//	this.in_move=true;
+		//	var that = this;
+		//	window.setTimeout(function(){that.anim()},50);
+		}
+		else
+		{
+			this.move = false;
+		}
+	};
+}
 function svgElementClicked(theElement)
 {
 	//alert( "A <> element.");
@@ -14,15 +94,65 @@ function svgElementClicked(theElement)
 	var x = parseInt(fo.attr('x').split("%")[0]);
 console.log(x);	
 //	fo.attr('x',x+1+"%");
-anim(fo,0,50,f);
+	console.log($(fo).attr("id"));	
+	var lettre = tab2[$(fo).attr("id")];
+	if(lettre.lettre == lettre_a_trouver)
+	{
+		var texte = "tu as trouver";
+		var texte2 = "bravo";
+		ajax_lecture(texte);
+		window.setTimeout(function(){ajax_lecture(texte2)},1000);
+		for(var key in tab2)
+		{
+			a=tab2[key];
+//			console.log(tab2[a]);
+			if(a.lettre != lettre_a_trouver)
+			{
+				a.move = false;
+				a.len = 100;
+				a.step = 0;
+				a.xfin = 208;
+				a.yfin = 840;
+	
+				a.anim_function=lettre.anim1;
+				a.move = true;
+				a.anim();
+			}
+		}
+	}
+	else
+	{
+		var texte = "tu as cliquer sur la lettre";
+		var texte2 = "tu dois trouver la lettre";
+		ajax_lecture(texte);
+		window.setTimeout(function(){ajax_lecture(lettre.lettre);
+			window.setTimeout(function(){ajax_lecture(texte2);
+				window.setTimeout(function(){ajax_lecture(lettre_a_trouver)
+				},2000)
+			},1500)
+		},2000);
+
+		lettre.move = false;
+		lettre.len = 100;
+		lettre.step = 0;
+		lettre.xfin = 208;
+		lettre.yfin = 840;
+		
+		lettre.anim_function=lettre.anim1;
+		lettre.move = true;
+		lettre.anim();
+	}
+
+
+	
 	console.log($('#'+e_parent.getAttributeNS(null,"id")).parent());
 	//console.log(document);
 }
 function f(x,y)
 {
 	var r = new Object();
-	r.x=x+10;
-	r.y=y-10;
+	r.x=x+2;
+	r.y=y-2;
 	return r;
 }
 function anim22(obj,step,len,xfin,yfin)
@@ -47,12 +177,16 @@ function anim22(obj,step,len,xfin,yfin)
 	}
 
 }
-function anim2(obj, xfin, yfin)
+function anim2(lettre)
 {
-	len=100;
-	anim22(obj,0,len,xfin,yfin);	
+	lettre.move = false;
+	lettre.len = 100;
+	lettre.step = 0;
+	lettre.anim_function=lettre.anim1;
+	lettre.move = true;
+	lettre.anim();
 }
-function anim(obj,step,len,curv)
+function anim_hzbfgoqlk(obj,step,len,curv)
 {
 	var x = parseInt(obj.attr('x').split("px")[0]);
 	var y = parseInt(obj.attr('y').split("px")[0]);
@@ -107,12 +241,13 @@ function tirer_lettre(n)
 
 	var trouver = non_uniforme();
 	var index = Math.floor(Math.random() * 5);
-	var texte = "trouve la lettre";
-	ajax_lecture(texte);
+	var vous_devez="vous devez trouver la lettre";
+	ajax_lecture(vous_devez);
 	tab.push(trouver);
-	window.setTimeout(function(){ajax_lecture(trouver);
-		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},1000);},1000);
-
+	
+	lettre_a_trouver = trouver;
+  window.setTimeout(function(){ajax_lecture(trouver);
+	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},2500);},2000);
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
@@ -135,7 +270,7 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	elem.setAttribute("id","lettre_"+i)
 	elem.setAttribute("x","208px")
 	elem.setAttribute("y","840px")
-	elem.setAttribute("width","3%")
+	elem.setAttribute("width","5%")
 	elem.setAttribute("height","100%");
 	var obj = document.createElement('object',true);
 		
@@ -168,8 +303,16 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	var x = x_affiche + w_pan*1600/(n_total+2)*(i);
 	var y = y_affiche + h_pan*1200/2/2/2;
 	//console.log(lettre);
-		
-	anim2($(elem),x,y);
+
+	var current_lettre = new Lettre($(elem),lettre);
+
+	console.log($(elem).attr("id"));	
+	tab2[$(elem).attr("id")]=current_lettre;
+	current_lettre.xfin = x;
+	current_lettre.yfin = y;
+
+	//anim2($(elem),x,y);
+	anim2(current_lettre);
 	ajax_lecture(lettre);
 	if(i<n_total)
 	{
