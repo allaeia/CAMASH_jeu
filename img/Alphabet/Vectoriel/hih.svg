@@ -10,13 +10,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 754.4762 1051.875"
+   viewBox="0 0 1050 1050"
    width="100%"
    height="100%"
    id="svg3121"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 3">
+   sodipodi:docname="hih.svg">
   <defs
      id="defs3123" />
   <sodipodi:namedview
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.44951676"
-     inkscape:cx="-150.10634"
-     inkscape:cy="548.72554"
+     inkscape:zoom="0.63714286"
+     inkscape:cx="525"
+     inkscape:cy="525"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,16 +57,17 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.91370454,-2.21875)">
+     transform="translate(0.91370454,-4.09375)">
     <path
-       style="fill:#00ff00;stroke:#000000;stroke-width:12.95290279px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 5.611678,8.647522 c 12.299876,7.08119 12.10749,151.668378 1.0846067,139.416418 -8.5222178,-9.47247 238.3394953,-9.2906 231.4774853,22.01344 -48.89017,223.0338 -28.1479,480.09473 -10.76493,750.24433 2.44754,38.03734 -228.5265691,6.34968 -221.6996306,-2.61294 11.8768816,-15.59234 26.4630486,116.82493 0.8786966,129.93823 246.866944,-27.7264 489.675634,-14.8702 732.444414,-1.6151 -23.36144,-27.954 5.13361,-136.82725 -2.53575,-124.55257 -28.35954,45.38898 -290.81601,9.08823 -295.03492,-12.17369 C 392.15666,660.8244 387.18169,413.34271 421.08152,180.50748 427.68766,135.13433 740.33641,168.48524 732.62542,176.45342 714.53454,195.14768 701.2028,31.189667 732.76119,10.838532 490.37802,46.20308 247.99485,40.316317 5.611678,8.647522 z"
+       style="fill:#00ff00;stroke:#000000;stroke-width:12.92886257px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 5.5995635,10.587883 C 17.876611,17.65593 17.684583,161.97477 6.6821572,149.74555 -1.8242437,140.29066 244.5793,140.47219 237.73003,171.71813 188.9306,394.33799 209.63437,650.92183 226.98508,920.57004 229.42808,958.53678 -1.1173541,926.90794 5.6969139,917.96195 17.551753,902.39855 32.110848,1034.5701 6.5739797,1047.659 252.98275,1019.9841 495.3408,1032.8164 737.65901,1046.0469 714.34092,1018.1448 742.78309,909.47361 735.12796,921.72551 706.82106,967.03025 444.8517,930.79687 440.64062,909.57442 391.42713,661.55435 386.4614,414.53197 420.29831,182.12888 426.89219,136.83994 738.96068,170.12895 731.264,178.08234 713.20669,196.7419 699.8997,33.08819 731.39952,12.774826 489.4662,48.073739 247.53288,42.197902 5.5995635,10.587883 z"
        id="path2987"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssccsssscc" />
   </g>
-   <script>
-	document.getElementById("svg3121").addEventListener("click",sendClickToParentDocument,false);
+  <script
+     id="script3165">
+	document.getElementById(&quot;svg3121&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
 	function sendClickToParentDocument(evt)
 		{
 			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
@@ -78,7 +79,7 @@
       if (window.parent.svgElementClicked)
 				window.parent.svgElementClicked(target);
 			else
-				alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
+				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
 		}
   </script>
   <!--
