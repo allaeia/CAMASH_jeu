@@ -8,7 +8,7 @@
 			$type="x-wav";
 			$nom=str_replace(" ","_",$nom);
 			if(! file_exists($nom)) {
-				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&s=-5&src=%22'.$q.'%22&c=wav';
+				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&r=-5&src=%22'.$q.'%22&c=wav';
 				$commande = 'wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 				exec($commande);
 			}
