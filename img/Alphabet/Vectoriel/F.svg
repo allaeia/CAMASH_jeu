@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 651.44208 1000"
+   viewBox="0 0 1050 1050"
    width="100%"
    height="100%"
    id="svg3000"
@@ -26,7 +26,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.41623158"
+     inkscape:zoom="1.1202483"
      inkscape:cx="888.09713"
      inkscape:cy="695.95934"
      inkscape:document-units="px"
@@ -57,7 +57,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-44.295259,-30.723932)">
+     transform="translate(-44.295259,19.276068)">
     <path
        style="fill:none;stroke:#000000;stroke-width:13.03381634px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 124.38866,49.73414 C 14.763324,188.84602 55.233714,628.63239 72.853994,1022.6454 l 220.193416,1.5616 C 282.78837,923.31825 244.24959,746.92731 277.43095,647.84815 c 47.88676,-101.79371 229.5633,-40.60308 229.5633,-48.41137 0,-7.8083 53.24457,-184.16678 57.78125,-190.52194 24.108,-33.77075 -149.52735,-10.00586 -184.27535,12.4933 l -84.32944,32.79465 C 227.63017,428.45917 269.2564,338.93458 272.74594,271.48915 c 19.65675,-71.54909 110.41871,-70.47098 171.78205,-73.39773 24.21274,-7.0984 149.12406,49.6651 153.04229,60.90455 0.40405,1.16001 103.19893,-217.96816 90.57603,-221.75513 z"
@@ -71,8 +71,9 @@
        inkscape:connector-curvature="0"
        transform="translate(44.295259,30.723932)" />
   </g>
-    <script>
-	document.getElementById("svg3000").addEventListener("click",sendClickToParentDocument,false);
+  <script
+     id="script3109">
+	document.getElementById(&quot;svg3000&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
 	function sendClickToParentDocument(evt)
 		{
 			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
@@ -84,7 +85,7 @@
       if (window.parent.svgElementClicked)
 				window.parent.svgElementClicked(target);
 			else
-				alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
+				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
 		}
   </script>
   <!--

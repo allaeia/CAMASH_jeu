@@ -107,10 +107,12 @@ function tirer_lettre(n)
 
 	var trouver = non_uniforme();
 	var index = Math.floor(Math.random() * 5);
-	ajax_lecture("trouve la lettre");
+	var texte = "trouve la lettre";
+	ajax_lecture(texte);
 	tab.push(trouver);
 	window.setTimeout(function(){ajax_lecture(trouver);
 		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},1000);},1000);
+
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
