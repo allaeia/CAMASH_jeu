@@ -2,7 +2,7 @@
 <!--
 @authors : Guenon Marie et Favreau Jean-Dominique
 VIM / Master SSTIM
-@date : 16 / 10 /2013
+@date : 06 / 11 /2013
 -->
 <html lang="fr">
 	<head>
@@ -15,17 +15,17 @@ VIM / Master SSTIM
 		var message = "Bonjour%20tout%20le%20monde%20!";
 		var audioElement = document.createElement('audio');
 		//document.write(navigator.userAgent);
-		if(navigator.userAgent.indexOf("Safari")!=-1 && navigator.userAgent.indexOf("Chrome")==-1)
+		if(navigator.userAgent.indexOf("OPR")!=-1 || (navigator.userAgent.indexOf("Linux")!=-1 && navigator.userAgent.indexOf("Firefox")!=-1) )
 		{
 			//document.write("Safari");
-			audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
-			audioElement.setAttribute('type', "audio/mpeg");
+			audioElement.setAttribute('src', "http://api.voicerss.org/?key=***********a&hl=fr-fr&src=%22"+message+"%22&c=wav");//remplacez les étoiles par votre clé
+			audioElement.setAttribute('type', "audio/wav");
 			audioElement.play();
 		}
 		else
 		{
-			audioElement.setAttribute('src', "http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&src=%22"+message+"%22&c=wav");
-			audioElement.setAttribute('type', "audio/wav");
+			audioElement.setAttribute('src', "http://translate.google.com/translate_tts?tl=fr&q=%22"+message+"%22");
+			audioElement.setAttribute('type', "audio/mpeg");
 			audioElement.play();
 		}
 		//pour info Safari lis les audio tag si QuickTime est installé
