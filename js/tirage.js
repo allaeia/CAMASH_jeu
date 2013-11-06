@@ -22,5 +22,5 @@ function non_uniforme(){
 		return alphabet[25];
 	}
 	nombre = Math.floor(Math.random() * 20)+1;
-	return alphabet[15];
+	return alphabet[Math.floor(Math.random() * 15)+1];
 }
