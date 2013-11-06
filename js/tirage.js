@@ -1,4 +1,4 @@
-var alphabet = ["B","C","D","F","G","H","J","K","L","M","O","P","Q","R","U","vai","W","hix","Y","Z","A","E","hih","N","S","T"];
+var alphabet = ["B","C","D","F","geai","H","J","K","L","M","O","P","Q","R","U","vai","W","hix","Y","Z","A","E","hih","N","S","T"];
 
 function uniforme(){
 	var nombre = Math.floor(Math.random() * 26);
