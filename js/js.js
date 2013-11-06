@@ -128,9 +128,9 @@ console.log(x);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre);
 			window.setTimeout(function(){ajax_lecture(texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver)
-				},1700)
+				},2000)
 			},1500)
-		},1700);
+		},2000);
 
 		lettre.move = false;
 		lettre.len = 100;
@@ -247,7 +247,7 @@ function tirer_lettre(n)
 	
 	lettre_a_trouver = trouver;
   window.setTimeout(function(){ajax_lecture(trouver);
-	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},1800);},1500);
+	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},2500);},2000);
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
@@ -270,7 +270,7 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	elem.setAttribute("id","lettre_"+i)
 	elem.setAttribute("x","208px")
 	elem.setAttribute("y","840px")
-	elem.setAttribute("width","3%")
+	elem.setAttribute("width","5%")
 	elem.setAttribute("height","100%");
 	var obj = document.createElement('object',true);
 		
