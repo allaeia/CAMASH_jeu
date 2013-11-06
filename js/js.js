@@ -107,8 +107,8 @@ function tirer_lettre(n)
 
 	var trouver = non_uniforme();
 	var index = Math.floor(Math.random() * 5);
-	var vous_devez="vous devez trouver la lettre "+trouver;
-	ajax_lecture(vous_devez);
+	ajax_lecture("trouve la lettre");
+	ajax_lecture(trouver);
 	tab.push(trouver);
 
 	window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},4000);
