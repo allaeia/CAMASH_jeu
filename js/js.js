@@ -256,8 +256,17 @@ function tirer_lettre(n)
 	lettre_a_trouver = trouver;
 	son_a_trouver=son(lettre_a_trouver);
 	trouver_sond=sond(trouver);
+	if(is_consonne(trouver))
+	{
+		var duree = ajax_size(trouver)*1000/2;
+	}
+	else
+	{
+		var duree = ajax_size(trouver)*1000;
+	}
+	
   window.setTimeout(function(){ajax_lecture(trouver_sond);
-	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},ajax_size(trouver)*1000);},ajax_size(vous_devez)*1000);
+	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},duree);},duree);
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
@@ -324,10 +333,18 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	//anim2($(elem),x,y);
 	anim2(current_lettre);
 	lettre_son=son(lettre);
+	if(is_consonne(lettre))
+	{
+		var duree = ajax_size(lettre)*1000/2;
+	}
+	else
+	{
+		var duree = ajax_size(lettre)*1000;
+	}
 	ajax_lecture(lettre_son);
 	if(i<n_total)
 	{
-		window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},ajax_size(lettre)*1000);
+		window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},duree);//raccourcir si consonne 
 	}
 }
 
@@ -365,4 +382,13 @@ function sond(lettre)
 		return son_consonnes(alphabet_consonnes.indexOf(lettre));
 	}
 	return son_voyelles(alphabet_voyelles.indexOf(lettre));
+}
+
+function is_consonne(lettre)
+{
+	if(alphabet_consonnes.indexOf(lettre)!=-1)
+	{
+		return true;
+	}
+	return false;
 }
