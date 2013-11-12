@@ -1,7 +1,5 @@
 var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
 var alphabet_voyelles = ["O","U","Y","A","E","I"];
-var son_consonnes = ["be","que","de","fe","gueu","h","j","que","le","me","pe","queue","re","ve","w","x","ze","te","se","ne"];
-var son_voyelles = ["o","u","y","a","e","i"];
 
 function uniforme(){
 	var nombre = Math.floor(Math.random() * 26);

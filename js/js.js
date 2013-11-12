@@ -256,8 +256,10 @@ function tirer_lettre(n)
 	lettre_a_trouver = trouver;
 	son_a_trouver=son(lettre_a_trouver);
 	trouver_sond=sond(trouver);
-  window.setTimeout(function(){ajax_lecture(trouver_sond);
-	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},ajax_size(trouver)*1000);},ajax_size(vous_devez)*1000);
+	//son=document.getElementById("son_"+lettre);
+	//window.setTimeout(function(){son.pause();},5000);
+    window.setTimeout(function(){ajax_lecture(trouver_sond);
+	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},ajax_size(trouver)*1000);},ajax_size(vous_devez)*1000);//)
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
@@ -338,7 +340,7 @@ function ajax_lecture(lettre)
 		url: "../php/audio2.php",
 		data: "mot="+lettre,
 		success: function(msg){
-			$("#ma_div").append('<audio controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>');
+			$("#ma_div").append('<audio id=son_"'+lettre+'" controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>');
 		}
 	});
 }
