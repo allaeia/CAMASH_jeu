@@ -1,6 +1,12 @@
 var doc;
 var tab2 = [];
 var lettre_a_trouver;
+
+var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
+var alphabet_voyelles = ["O","U","Y","A","E","I"];
+var son_consonnes = ["be","que","de","fe","gueu","h","j","que","le","me","pe","queue","re","ve","w","x","ze","te","se","ne"];
+var son_voyelles = ["o","u","y","a","e","i"];
+
 function Lettre(obj,lettre){
 	this.lettre = lettre;
 	this.obj = obj;
@@ -125,9 +131,11 @@ console.log(x);
 		var texte = "tu as cliquer sur la lettre";
 		var texte2 = "tu dois trouver la lettre";
 		ajax_lecture(texte);
-		window.setTimeout(function(){ajax_lecture(lettre.lettre);
+		son=son(lettre.lettre);
+		son_a_trouver=son(lettre_a_trouver);
+		window.setTimeout(function(){ajax_lecture(son);
 			window.setTimeout(function(){ajax_lecture(texte2);
-				window.setTimeout(function(){ajax_lecture(lettre_a_trouver)
+				window.setTimeout(function(){ajax_lecture(son_a_trouver)
 				},2000)
 			},1500)
 		},2000);
@@ -246,7 +254,8 @@ function tirer_lettre(n)
 	tab.push(trouver);
 	
 	lettre_a_trouver = trouver;
-  window.setTimeout(function(){ajax_lecture(trouver);
+	trouver_sond=sond(trouver);
+  window.setTimeout(function(){ajax_lecture(trouver_sond);
 	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},ajax_size(trouver)*1000);},ajax_size(vous_devez)*1000);
 }
 function tirer_lettre_2(n_total,i,tab,trouver,index)
@@ -313,7 +322,8 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 
 	//anim2($(elem),x,y);
 	anim2(current_lettre);
-	ajax_lecture(lettre);
+	lettre_son=son(lettre);
+	ajax_lecture(lettre_son);
 	if(i<n_total)
 	{
 		window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},ajax_size(lettre)*1000);
@@ -345,4 +355,13 @@ function ajax_size(lettre)
 		}
 	});
 	return size;
+}
+
+function sond(lettre)
+{
+	if(alphabet_consonnes.indexOf(lettre)!=-1)
+	{
+		return son_consonnes(alphabet_consonnes.indexOf(lettre));
+	}
+	return son_voyelles(alphabet_voyelles.indexOf(lettre));
 }
