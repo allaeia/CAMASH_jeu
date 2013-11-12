@@ -1,6 +1,7 @@
 var doc;
 var tab2 = [];
 var lettre_a_trouver;
+var son_a_trouver;
 
 var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
 var alphabet_voyelles = ["O","U","Y","A","E","I"];
@@ -132,7 +133,6 @@ console.log(x);
 		var texte2 = "tu dois trouver la lettre";
 		ajax_lecture(texte);
 		son=son(lettre.lettre);
-		son_a_trouver=son(lettre_a_trouver);
 		window.setTimeout(function(){ajax_lecture(son);
 			window.setTimeout(function(){ajax_lecture(texte2);
 				window.setTimeout(function(){ajax_lecture(son_a_trouver)
@@ -254,6 +254,7 @@ function tirer_lettre(n)
 	tab.push(trouver);
 	
 	lettre_a_trouver = trouver;
+	son_a_trouver=son(lettre_a_trouver);
 	trouver_sond=sond(trouver);
   window.setTimeout(function(){ajax_lecture(trouver_sond);
 	  window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},ajax_size(trouver)*1000);},ajax_size(vous_devez)*1000);
