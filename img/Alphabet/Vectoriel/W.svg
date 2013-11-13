@@ -9,11 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1050"
-   height="1050"
+width="100%"
+height="100%"
    id="svg26843"
    version="1.1"
    inkscape:version="0.48.4 r9939"
+ preserveAspectRatio="xMinYMin meet"
+viewBox="0 0 1050 1050"
    sodipodi:docname="W.svg">
   <defs
      id="defs26845" />
@@ -65,4 +67,5 @@
          y="1052.925"
          style="stroke-width:3.87424636">W</tspan></text>
   </g>
+<script id="scriptsvg26843">document.getElementById("svg26843").addEventListener("click",sendClickToParentDocument,false);function sendClickToParentDocument(evt){var target = evt.target; if(target.correspondingUseElement){target = target.correspondingUseElement;}if (window.parent.svgElementClicked){window.parent.svgElementClicked(target);}else{alert(&quot;You clicked '&quot; + target.id + &quot;' which     is a &quot; + target.nodeName + &quot; element&quot;);}}</script>
 </svg>
