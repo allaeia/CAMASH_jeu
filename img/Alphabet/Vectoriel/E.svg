@@ -9,97 +9,59 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1050"
+   height="1050"
+   id="svg7469"
    version="1.1"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1050 1050"
-   width="100%"
-   height="100%"
-   id="svg3000"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="E.svg">
+   sodipodi:docname="Nouveau document 13">
+  <defs
+     id="defs7471" />
   <sodipodi:namedview
+     id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     id="namedview3013"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="-365.56816"
+     inkscape:cy="932.25426"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="0.63714286"
-     inkscape:cx="525"
-     inkscape:cy="525"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3000" />
-  <defs
-     id="defs3002" />
+     inkscape:window-width="724"
+     inkscape:window-height="405"
+     inkscape:window-x="694"
+     inkscape:window-y="215"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3005">
+     id="metadata7474">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(1.05,0,0,1.05,-59.280597,-32.531848)">
-    <path
-       d="M 145.82716,46.69572 C 15.901276,412.85392 75.838456,705.17663 82.466146,1018.2307 280.99714,1014.0066 493.2962,1041.9077 678.05937,1005.5585 L 577.34361,781.67003 c -53.93648,43.86256 -117.0638,73.01973 -191.41314,84.22181 -135.68861,-12.11066 -148.53075,-97.16143 -156.193,-185.2879 9.27124,-99.02858 54.31698,-106.06564 90.34692,-136.2861 62.23583,-10.65949 114.37469,-5.16397 156.19313,16.84441 46.07693,-54.24616 51.82142,-131.5394 71.97133,-200.601 -72.88172,-21.9909 -149.76728,-23.96213 -238.88363,35.22001 -124.33624,22.78128 -66.00934,-142.19863 -55.12691,-163.84956 63.34896,-64.58988 110.22922,-46.83663 162.31824,-55.12704 55.84803,7.53524 106.97616,29.22993 154.66182,61.25228 L 660.03411,45.11249 160.82877,37.45594 z"
-       id="path2987"
-       style="fill:none;stroke:#000000;stroke-width:12.94648552px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
+     transform="translate(0,-2.3621826)">
+    <text
+       xml:space="preserve"
+       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#00ff00;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-116.03001"
+       y="1052.3622"
+       id="text7477"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7479"
+         x="-116.03001"
+         y="1052.3622">E</tspan></text>
   </g>
-  <path
-     style="color:#000000;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     d="m 376.94799,1035.0235 c -21.52823,-0.217 -81.41589,-1.5897 -133.08366,-3.0503 -51.66777,-1.4606 -119.971,-2.6529 -151.784949,-2.6497 l -57.84355,0.011 -0.0079,-15.2219 C 34.219746,997.75557 30.172252,909.28697 27.283818,862.32255 13.229597,633.80843 11.579475,503.85117 21.297662,390.87588 31.228081,275.43335 54.156038,162.32822 89.713339,53.376777 99.838961,22.350767 100.44189,21.067042 106.39379,17.86173 c 6.06804,-3.267852 9.5909,-3.274631 203.16683,-0.390929 108.34543,1.614024 222.86987,3.430255 254.49875,4.03607 l 57.50704,1.101484 -41.85014,91.047505 c -23.01758,50.07613 -42.37259,91.05411 -43.01113,91.06218 -0.63856,0.008 -7.29274,-3.63403 -14.78707,-8.09359 -47.19053,-28.08099 -110.74547,-49.96744 -144.97008,-49.92342 -8.13289,0.0105 -28.32156,0.97095 -44.86372,2.13442 -55.88559,3.93065 -82.52436,14.19793 -117.79408,45.40094 -14.18839,12.55241 -14.66162,13.33223 -22.73812,37.46846 -20.98338,62.70794 -20.46265,116.11751 1.374,140.92525 13.75276,15.62396 29.65107,21.04127 57.28209,19.51871 16.34532,-0.90067 17.62381,-1.26562 28.50287,-8.13638 21.80477,-13.77097 53.16093,-28.28788 74.75161,-34.60763 25.57619,-7.48633 42.33601,-9.74523 71.32588,-9.61339 28.43206,0.12926 38.42344,1.31616 66.31362,7.87704 l 15.8636,3.73175 -2.37007,8.865 c -1.30352,4.87574 -6.37721,25.69615 -11.27482,46.26757 -17.20509,72.26625 -30.81494,108.57245 -50.64328,135.09813 -3.26586,4.36894 -4.72583,5.14728 -7.13069,3.80144 -5.66108,-3.1681 -31.5936,-11.58351 -44.68164,-14.49971 -25.60824,-5.70588 -93.67964,-5.20685 -114.76859,0.84139 -5.61302,1.6098 -48.54976,32.49571 -58.92726,42.38847 -27.36515,26.08693 -43.78571,73.12555 -41.382,118.54364 2.01281,38.0321 10.95502,79.00209 22.87345,104.798 15.00747,32.48168 40.32186,56.38969 73.92408,69.81708 18.12912,7.24436 36.20635,11.9778 56.57438,14.81376 15.96134,2.22237 18.73008,2.1476 34.71436,-0.9374 41.8224,-8.07183 69.79035,-17.47006 107.88556,-36.2534 15.30897,-7.54829 37.62005,-20.37079 49.58018,-28.49445 11.96013,-8.12368 22.28672,-14.23826 22.94796,-13.58797 1.84287,1.81232 96.82206,213.33025 96.12282,214.06485 -0.91208,0.9582 -14.98333,3.5069 -35.5673,6.4424 -61.59456,8.7839 -135.87289,12.5825 -227.89489,11.6545 l 0,0 z"
-     id="path3060"
-     inkscape:connector-curvature="0" />
-  <script
-     id="script3091">
-	document.getElementById(&quot;svg3000&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-      
-      // call a method in the parent document if it exists
-      if (window.parent.svgElementClicked)
-				window.parent.svgElementClicked(target);
-			else
-				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
-		}
-  </script>
-  <!--
-  <script xlink:href="../../../src/js.js"/>
-  <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-				
-				//svgElementClicked(target);
-				top.svgElementClicked(target);
-			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
-		}
-  </script>-->
 </svg>
