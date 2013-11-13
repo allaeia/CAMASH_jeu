@@ -5,7 +5,7 @@ var son_a_trouver;
 
 var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
 var alphabet_voyelles = ["O","U","Y","A","E","I"];
-var son_consonnes = ["beu","que","deu","feu","gueu","h","j","que","leu","meu","peu","queue","reu","vai","w","hix","ze","te","seu","neu"];
+var son_consonnes = ["beu","que","deu","feu","gueu","h","j","que","leu","meu","peu","queue","reu","vai","w","hix","ze","te","seu","neux"];
 var son_voyelles = ["o","u","y","a","e","hih"];
 
 function Lettre(obj,lettre){
@@ -160,8 +160,8 @@ console.log(x);
 			window.setTimeout(function(){ajax_lecture(texte2,texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},3000)
-			},duree+500)
-		},3500);
+			},2000)
+		},2500);
 
 		lettre.move = false;
 		lettre.len = 100;
@@ -288,7 +288,7 @@ function tirer_lettre(n)
 	}
 
     	window.setTimeout(function(){ajax_lecture(trouver,trouver_son);
-		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},duree+1000);},size*1000);
+		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},2000);},3000);
 }
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
@@ -356,14 +356,14 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	//anim2($(elem),x,y);
 	anim2(current_lettre);
 	var lettre_son=son(lettre);
-	ajax_lecture(lettre,lettre_son);
+	//ajax_lecture(lettre,lettre_son);
 	if(i<n_total)
 	{
 		//marche pas le ajax_size si la lettre est pas déjà définie. (duree=0, en fait la size est calculée avant que la download soit finie
 		//*** d'asynchrone
-		var duree = duration_lettre(lettre);
-		window.setTimeout(function(){jQuery('audio').each(function(){this.pause();});//le id a pas été trouvé dans le code ==> marche pas quand dynamique
-			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},1000);},duree);
+	//	var duree = duration_lettre(lettre);
+	//	window.setTimeout(function(){jQuery('audio').each(function(){this.pause();});//le id a pas été trouvé dans le code ==> marche pas quand dynamique
+			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},2000);
 	}
 }
 
