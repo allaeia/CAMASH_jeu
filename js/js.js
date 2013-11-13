@@ -38,6 +38,17 @@ function Lettre(obj,lettre){
 		if(this.in_move==false)
 			this.anim_2();
 	};
+	function diminuer_size()
+	{
+		var w = parseInt(this.obj.attr('width').split("%")[0]);
+		var w2 = w - 0.1;
+		if(w2<0)
+		{
+			w2=0;
+			this.move = false;
+		}
+		this.obj.attr('width',w2+"%");
+	};
 	this.anim1 = function (){
 
 		var x0 = parseInt(this.obj.attr('x').split("px")[0]);
@@ -62,7 +73,7 @@ function Lettre(obj,lettre){
 		}
 		else
 		{
-			this.move = false;
+			this.anim_function = this.diminuer_size;
 		}
 	};
 	this.anim2 = function(){
