@@ -3,7 +3,7 @@
 		$r=str_replace("%20","_",$q);
 		$nom_mp3='../snd/'.$r.'.mp3';
 		if(strpos($_SERVER['HTTP_USER_AGENT'],'OPR')
-			|| (strpos($_SERVER['HTTP_USER_AGENT'],'Linux') && strpos($_SERVER['HTTP_USER_AGENT'],'Firefox'))) {
+			|| (strpos($_SERVER['HTTP_USER_AGENT'],'Linux'))) {
 			$nom='../snd/'.$r.'.wav';
 			$type="x-wav";
 			$nom=str_replace(" ","_",$nom);
