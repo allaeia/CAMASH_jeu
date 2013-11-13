@@ -129,8 +129,9 @@ console.log(x);
 	{
 		var texte = "tu as trouver";
 		var texte2 = "bravo";
-		ajax_lecture(texte);
-		window.setTimeout(function(){ajax_lecture(texte2)},1000);
+		console.log(texte);
+		ajax_lecture(texte,texte);
+		window.setTimeout(function(){ajax_lecture(texte2,texte2)},1000);
 		for(var key in tab2)
 		{
 			a=tab2[key];
@@ -153,10 +154,10 @@ console.log(x);
 	{
 		var texte = "tu as cliquer sur la lettre";
 		var texte2 = "tu dois trouver la lettre";
-		ajax_lecture(texte);
+		ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
-			window.setTimeout(function(){ajax_lecture(texte2);
+			window.setTimeout(function(){ajax_lecture(texte2,texte);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},2000)
 			},1500)
