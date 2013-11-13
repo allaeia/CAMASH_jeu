@@ -143,8 +143,8 @@ console.log(x);
 		var texte = "tu as cliquer sur la lettre";
 		var texte2 = "tu dois trouver la lettre";
 		ajax_lecture(texte);
-		son=son(lettre.lettre);
-		window.setTimeout(function(){ajax_lecture(lettre.lettre,son);
+		son_lettre=son(lettre.lettre);
+		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
 			window.setTimeout(function(){ajax_lecture(texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},2000)
@@ -260,7 +260,7 @@ function tirer_lettre(n)
 
 	var trouver = non_uniforme();
 	var index = Math.floor(Math.random() * 5);
-	var vous_devez="vous devez trouver la lettre";
+	var vous_devez="tu dois trouver la lettre";
 	ajax_lecture(vous_devez,vous_devez);
 	tab.push(trouver);
 	
