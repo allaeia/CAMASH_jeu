@@ -9,16 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1050 1050"
-   width="100%"
-   height="100%"
-   id="svg3017"
+   width="1050"
+   height="1050"
+   id="svg21640"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="R.svg">
+   sodipodi:docname="Nouveau document 53">
   <defs
-     id="defs3019" />
+     id="defs21642" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,30 +24,26 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.63714286"
-     inkscape:cx="525"
-     inkscape:cy="525"
+     inkscape:zoom="0.43203125"
+     inkscape:cx="192.40825"
+     inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-width="784"
+     inkscape:window-height="822"
+     inkscape:window-x="800"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3022">
+     id="metadata21645">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,61 +51,17 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-12.864536,16.372129)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:13.66881466px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 64.093564,-6.3042363 C 33.997847,13.815979 -9.7483771,604.13681 47.926228,1009.0094 l 240.894402,17.7841 C 271.66026,912.47179 249.8723,796.20635 253.25232,690.51128 279.68521,648.5196 307.8524,623.9689 356.72375,612.90783 c 43.58535,13.70339 104.06534,53.38409 202.09274,397.71827 l 208.55974,16.1674 C 747.44215,923.4827 769.06722,834.83961 683.30564,708.29551 L 542.64902,511.05301 C 598.30323,440.54666 660.37154,419.02758 714.02373,273.39211 710.83572,260.06582 777.75601,171.88065 629.9531,21.180328 L 534.56541,-9.5377334 z"
-       id="path2987"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:13.66881466px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 230.61799,268.54187 c -13.51335,62.82723 -8.10259,128.26896 8.08374,184.3085 123.99059,3.99249 262.8004,-125.91877 276.46271,-211.79321 1.45874,-33.4515 -12.92768,-45.01203 -42.43835,-74.37012 C 331.6332,132.44537 275.4307,132.17376 230.61799,268.54187 z"
-       id="path2991"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 36.760521,833.19735 C 30.551722,744.7033 27.718078,666.70224 27.086462,566.90177 26.270378,437.9539 30.98533,300.66321 40.141694,186.75766 c 1.373872,-17.09104 2.49795,-31.4937 2.49795,-32.00592 0,-0.81824 15.441449,-0.93132 127.174936,-0.93132 l 127.17495,0 -6.69717,4.42312 c -13.37741,8.83508 -27.50213,24.45285 -37.72101,41.70831 -12.54096,21.17648 -26.86961,56.36774 -30.44322,74.7688 -1.8507,9.52951 -3.75148,23.03089 -4.90947,34.87244 -1.27106,12.99767 -1.07667,56.66497 0.31163,70.00309 2.44904,23.52929 6.09151,43.80851 11.82145,65.81514 1.72866,6.63916 3.29799,12.56784 3.4874,13.17485 0.31268,1.00206 1.48729,1.10365 12.76126,1.10365 34.19252,0 68.62293,-8.88414 106.37726,-27.44874 83.59172,-41.10378 156.91954,-122.02063 169.71298,-187.27732 0.97723,-4.98469 1.0242,-6.68379 0.39227,-14.18982 -0.90366,-10.73349 -2.49516,-16.93022 -6.40869,-24.95293 -4.35496,-8.92768 -10.24534,-16.22659 -25.77651,-31.94028 l -13.52103,-13.67992 -11.11616,-2.61768 c -6.11389,-1.43974 -11.96756,-2.84974 -13.00815,-3.13333 -1.04058,-0.28359 56.60173,-0.54122 128.09405,-0.5725 l 129.986,-0.0569 2.24824,8.0409 c 5.08607,18.19064 6.38397,27.44869 6.34354,45.24975 -0.0436,19.10991 -1.23451,25.73346 -9.90367,55.07539 -1.26359,4.2768 -2.29743,8.30031 -2.29743,8.94111 0,1.64511 -8.36436,22.76183 -14.40323,36.36238 -15.69256,35.34254 -33.5965,65.45329 -53.93676,90.71066 -10.79741,13.40759 -18.72724,21.8798 -49.58389,52.97532 -17.55408,17.68997 -34.1928,34.71775 -36.97492,37.83951 -6.72041,7.54083 -17.90165,21.13477 -17.90165,21.76449 0,0.27585 32.26055,45.72364 71.6901,100.99509 39.42955,55.27145 73.7503,103.64428 76.26833,107.49516 17.20166,26.30684 31.51149,54.3964 41.87629,82.20126 3.69686,9.91723 10.1741,31.36618 12.29457,40.71279 0.55088,2.42803 1.14962,4.91207 1.33056,5.52003 0.31275,1.05093 -5.14636,1.09754 -110.75403,0.94599 l -111.08301,-0.1594 -5.55471,-15.45114 C 482.76693,757.31314 455.3508,699.05172 430.30813,663.70786 422.19952,652.26384 416.54303,645.532 407.22263,636.23372 392.1814,621.22816 381.30256,614.14875 363.10974,607.52726 l -5.89569,-2.14582 -6.40215,1.61874 c -22.41887,5.66846 -40.68146,14.0808 -57.17015,26.33442 -7.52658,5.59341 -22.79217,20.73779 -29.62788,29.39263 -2.86149,3.62301 -8.07915,10.85981 -11.59478,16.08179 l -6.39207,9.49452 0.0636,28.37964 c 0.0837,37.35733 1.99798,68.18788 6.90238,111.1682 1.19822,10.50066 2.17857,19.51119 2.17857,20.02341 0,0.81778 -13.25273,0.93135 -108.65797,0.93135 l -108.657964,0 -1.095124,-15.60879 0,0 z"
-       id="path3032"
-       inkscape:connector-curvature="0" />
-    <path
-       style="color:#000000;fill:#d42aff;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 162.81975,1009.9759 C 61.600238,1002.3281 56.188177,1001.7662 55.020043,998.78482 54.343607,997.05837 51.972586,980.46083 49.751106,961.90142 32.327408,816.33465 24.775526,639.11647 28.325246,459.10593 31.477531,299.24983 39.05789,174.91557 51.352565,81.40813 56.050601,45.677115 64.139997,6.1820709 67.495969,2.5908115 68.075074,1.9711068 173.0654,0.68018845 300.8078,-0.27789771 l 232.25892,-1.74197519 46.30045,14.9576799 46.30045,14.957676 9.07997,9.884126 c 61.51512,66.963041 90.37129,131.752431 82.82978,185.973731 -1.93961,13.94515 -10.24522,44.90638 -16.7596,62.47542 -7.34504,19.80935 -29.94435,63.97504 -42.56468,83.18386 -17.02364,25.91091 -30.50966,41.62975 -71.52568,83.36791 -39.33498,40.02751 -53.59791,56.09667 -52.44892,59.09091 0.42497,1.10749 32.78345,46.84475 71.9077,101.63839 76.45535,107.07587 87.66212,123.92101 101.78041,152.98799 24.73625,50.92741 33.25603,87.31794 41.70605,178.13902 2.20866,23.73879 5.06869,49.79485 6.35562,57.90236 1.28693,8.1075 2.10021,14.9806 1.80727,15.2735 -0.60713,0.6071 -185.43336,-13.3217 -190.23967,-14.3368 -2.61097,-0.5514 -4.70457,-6.01827 -12.44549,-32.49765 -30.04386,-102.77102 -62.94734,-192.60012 -91.82033,-250.6768 -13.68205,-27.52081 -16.76598,-32.91061 -30.37686,-53.08954 -19.89384,-29.49384 -42.68168,-50.00044 -64.99281,-58.48652 -8.26357,-3.14306 -9.96847,-3.29184 -18.37113,-1.60319 -37.09074,7.45397 -70.92055,32.05179 -97.09026,70.59478 l -7.92199,11.66759 1.04543,38.33557 c 1.80794,66.29634 7.98949,121.8099 27.80051,249.66281 3.39265,21.89491 6.16845,40.08155 6.16845,40.41475 0,0.9627 -4.479,0.6626 -116.77164,-7.8218 l 0,0 z M 277.48591,457.21979 c 44.83047,-7.13451 91.89898,-29.09031 137.8678,-64.31048 17.31372,-13.26533 53.35388,-49.13801 65.39254,-65.08862 29.18943,-38.67453 43.85244,-73.86037 41.49894,-99.58211 -1.67883,-18.34825 -8.6216,-30.71351 -28.78094,-51.25969 l -16.89977,-17.22404 -26.68161,-6.05607 c -77.67024,-17.62919 -115.55297,-17.95956 -149.64435,-1.30504 -22.50352,10.99355 -40.20526,30.85125 -56.53878,63.42481 -16.33332,32.57317 -23.47798,57.74247 -26.74648,94.22291 -3.92128,43.7664 -0.67569,82.50034 10.97285,130.95275 l 4.75724,19.78787 15.2141,-0.63735 c 8.36777,-0.35055 21.68257,-1.66677 29.58846,-2.92494 l 0,0 z"
-       id="path7570"
-       inkscape:connector-curvature="0" />
+     transform="translate(0,-2.3621533)">
+    <text
+       xml:space="preserve"
+       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#d42aff;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-115.31377"
+       y="1052.3622"
+       id="text21648"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan21650"
+         x="-115.31377"
+         y="1052.3622">R</tspan></text>
   </g>
-  <script
-     id="script3298">
-	document.getElementById(&quot;svg3017&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-      
-      // call a method in the parent document if it exists
-      if (window.parent.svgElementClicked)
-				window.parent.svgElementClicked(target);
-			else
-				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
-		}
-  </script>
-  <!--
-  <script xlink:href="../../../src/js.js"/>
-  <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-				
-				//svgElementClicked(target);
-				top.svgElementClicked(target);
-			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
-		}
-  </script>-->
 </svg>

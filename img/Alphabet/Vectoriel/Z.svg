@@ -9,16 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1050 1050"
-   width="100%"
-   height="100%"
-   id="svg3266"
+   width="1050"
+   height="1050"
+   id="svg29966"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Z.svg">
+   sodipodi:docname="Nouveau document 78">
   <defs
-     id="defs3268" />
+     id="defs29968" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,30 +24,26 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.63714286"
-     inkscape:cx="525"
-     inkscape:cy="525"
+     inkscape:zoom="0.43203125"
+     inkscape:cx="375"
+     inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-width="784"
+     inkscape:window-height="822"
+     inkscape:window-x="800"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3271">
+     id="metadata29971">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,50 +51,17 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.1027491,30.644727)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:13.6641674px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 80.373155,-23.81267 613.942955,6.548819 c 78.16752,4.692615 46.60717,79.328952 27.83217,109.691162 L 384.88884,608.13938 c -109.23519,170.16671 -67.12974,236.63702 58.93848,245.57721 61.6935,1.71068 138.94531,-55.46095 194.82465,-85.13337 l 91.68222,243.93998 -674.518824,-1.6371 C 1.4564659,1018.6617 -12.41983,938.17938 57.45261,798.05246 75.720589,761.41661 304.07473,393.45053 394.71187,244.68509 403.5183,238.28041 469.94828,109.18081 314.49009,133.35683 281.78327,138.44317 160.59494,208.66715 160.59494,208.66715 111.45162,125.13769 92.772427,56.042091 80.373155,-23.81267 z"
-       id="path3253"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccscscc" />
-    <path
-       style="color:#000000;fill:#0000d4;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 231.31539,1002.2964 -192.945952,-0.9537 -8.119457,-8.64274 C 9.6127948,970.73267 19.445645,902.89277 54.437327,825.82387 70.088722,791.35184 135.20691,683.0714 327.28891,372.11834 414.79963,230.45115 417.9649,224.64952 422.30928,197.95672 c 5.61142,-34.47788 -5.24069,-58.13556 -31.76431,-69.24642 -17.07266,-7.15182 -72.2231,-6.93706 -92.81392,0.36143 -8.76506,3.10679 -42.34991,19.29735 -74.63301,35.97899 -44.60312,23.04779 -59.44284,29.23046 -61.80473,25.74973 C 137.00016,154.99949 103.96938,61.093813 92.860674,-3.7518062 l -1.986259,-11.5945168 18.640415,0.04692 c 10.25223,0.0258 148.48701,1.656 307.1884,3.622645 320.84804,3.9759838 308.30983,2.8965932 316.34163,27.233246 4.51123,13.669119 0.65574,35.755207 -9.80169,56.149019 -3.11797,6.080592 -84.41415,131.460213 -180.6582,278.621383 -96.24405,147.16117 -183.36645,283.61972 -193.60538,303.24121 -40.51696,77.64519 -44.96228,136.80302 -12.82568,170.68288 25.70367,27.09795 92.524,43.77289 138.29683,34.51184 24.50007,-4.957 70.40772,-25.81421 120.4433,-54.72091 19.28633,-11.14215 36.26526,-20.25848 37.73095,-20.25848 1.46573,0 18.40899,42.14162 37.65171,93.64802 19.24277,51.50641 37.96041,101.27365 41.59485,110.59386 l 6.60805,16.94579 -147.10912,-0.8605 c -80.91003,-0.4733 -233.93481,-1.2897 -340.05509,-1.8142 l 0,0 z"
-       id="path3547"
-       inkscape:connector-curvature="0" />
+     transform="translate(0,-2.3621826)">
+    <text
+       xml:space="preserve"
+       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000d4;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-29.36562"
+       y="1052.3622"
+       id="text29974"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan29976"
+         x="-29.36562"
+         y="1052.3622">Z</tspan></text>
   </g>
-  <script
-     id="script3361">
-	document.getElementById(&quot;svg3266&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-      
-      // call a method in the parent document if it exists
-      if (window.parent.svgElementClicked)
-				window.parent.svgElementClicked(target);
-			else
-				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
-		}
-  </script>
-  <!--
-  <script xlink:href="../../../src/js.js"/>
-  <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-				
-				//svgElementClicked(target);
-				top.svgElementClicked(target);
-			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
-		}
-  </script>-->
 </svg>

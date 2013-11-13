@@ -9,16 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1050 1050"
-   width="100%"
-   height="100%"
-   id="svg3045"
+   width="1050"
+   height="1050"
+   id="svg15854"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="M.svg">
+   sodipodi:docname="Nouveau document 37">
   <defs
-     id="defs3047" />
+     id="defs15856" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,30 +24,26 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.63714286"
-     inkscape:cx="525"
-     inkscape:cy="525"
+     inkscape:zoom="0.21601563"
+     inkscape:cx="73.417272"
+     inkscape:cy="620.24509"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-width="784"
+     inkscape:window-height="822"
+     inkscape:window-x="800"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3050">
+     id="metadata15859">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,50 +51,17 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-28.447997,64.930489)">
-    <path
-       style="fill:#deaa87;fill-opacity:1;stroke:#000000;stroke-width:11.95452404px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 64.330537,970.89289 c 6.255338,0 168.893533,-3.27964 168.893533,-3.27964 -65.57948,-292.33633 -64.67912,-745.23642 -43.78721,-749.42634 57.61361,17.33902 109.52603,276.80933 150.12753,439.48848 52.23413,146.0547 77.24519,82.65901 92.57865,45.91671 64.90124,-345.76844 99.87293,-427.84984 146.37431,-488.68495 56.80971,137.33945 8.84863,526.44535 -32.52765,757.62569 l 171.39565,6.55941 C 787.52596,473.79307 750.21361,41.954228 721.13858,-58.953228 l -161.38709,9.839361 C 487.41828,11.614213 447.92839,158.44344 393.36005,265.74358 344.55066,148.79515 294.02529,-17.640303 248.23673,-47.474044 L 71.836978,-49.113867 C 13.110606,269.06739 33.77696,870.46349 64.330537,970.89289 z"
-       id="path3025"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccccccc" />
-    <path
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 48.794504,849.81507 C 48.792719,849.03463 48.09652,839.7403 47.247352,829.16101 39.277186,729.86517 37.167931,595.57437 41.868657,486.71342 45.745642,396.92893 53.259178,320.05265 64.608653,254.04449 c 2.425903,-14.10897 7.528942,-39.79749 9.905926,-49.8661 l 1.116638,-4.72994 4.084024,0 c 2.246214,0 40.693749,0.23994 85.438979,0.5332 l 81.35495,0.53321 4.40985,2.92783 c 9.26795,6.15328 22.38766,21.21629 34.69714,39.83653 16.74702,25.33278 30.13438,50.14608 68.73153,127.39303 22.16181,44.35381 37.99154,74.5956 38.78845,74.10308 0.71768,-0.44355 15.70118,-23.97663 21.88438,-34.3716 6.19063,-10.40744 22.54568,-39.47608 32.99929,-58.65124 11.46727,-21.03456 26.3528,-47.29467 33.5525,-59.19117 26.03936,-43.02646 50.72905,-72.30122 76.30508,-90.47553 l 3.96105,-2.81472 77.41764,-3.60342 c 42.57972,-1.98188 77.79443,-3.45883 78.25501,-3.2821 1.6877,0.64764 7.8206,24.56874 12.32054,48.0557 10.89639,56.87313 17.79328,126.4715 21.65455,218.52319 1.0501,25.03465 1.04316,126.82158 -0.0107,153.88069 -3.32843,85.47475 -9.50327,163.70425 -18.18195,230.34803 l -1.04714,8.04089 -77.16316,0 c -61.31328,0 -77.16192,-0.16195 -77.15715,-0.78832 0.003,-0.43357 0.72267,-4.61958 1.59863,-9.30221 2.87496,-15.36903 9.62628,-56.66152 12.83752,-78.51699 13.3642,-90.95582 19.7042,-174.60881 17.74433,-234.12682 -1.68813,-51.27154 -7.17323,-87.16089 -17.75966,-116.204 -1.60675,-4.40798 -10.86578,-24.84162 -11.7008,-25.82234 -0.69822,-0.82004 -19.14834,19.10528 -27.1224,29.29096 -34.76294,44.40458 -62.58287,113.0326 -98.17034,242.17288 -6.8387,24.81638 -9.90246,36.45445 -20.25479,76.94035 -8.38341,32.78588 -8.38645,32.79583 -11.94586,39.05275 -15.09359,26.53245 -26.01502,30.76909 -41.58037,16.12986 -10.56241,-9.93395 -20.52947,-25.00409 -32.74265,-49.50669 -4.28589,-8.59853 -7.20576,-17.34516 -28.21124,-84.50824 -11.72284,-37.48268 -31.72014,-97.8629 -39.05822,-117.93316 -33.29024,-91.05135 -60.06457,-134.91916 -88.09984,-144.34519 -4.27429,-1.4371 -4.87203,-1.49781 -6.80306,-0.69098 -4.24427,1.77336 -6.93782,6.83262 -9.22535,17.32782 -7.1326,32.72451 -8.44704,124.1443 -3.11016,216.31588 4.06011,70.12104 12.53438,148.01693 22.67009,208.38466 1.39327,8.29826 2.53323,15.32223 2.53323,15.60879 0,0.28658 -33.91366,0.52099 -75.3637,0.52099 l -75.363693,0 -0.0033,-1.41898 4e-6,0 z"
-       id="path3158"
-       inkscape:connector-curvature="0" />
+     transform="translate(0,-2.3621826)">
+    <text
+       xml:space="preserve"
+       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#deaa87;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-108.86766"
+       y="1052.3622"
+       id="text15862"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15864"
+         x="-108.86766"
+         y="1052.3622">M</tspan></text>
   </g>
-  <script
-     id="script3948">
-	document.getElementById(&quot;svg3045&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-      
-      // call a method in the parent document if it exists
-      if (window.parent.svgElementClicked)
-				window.parent.svgElementClicked(target);
-			else
-				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
-		}
-  </script>
-  <!--
-  <script xlink:href="../../../src/js.js"/>
-  <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-				
-				//svgElementClicked(target);
-				top.svgElementClicked(target);
-			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
-		}
-  </script>-->
 </svg>
