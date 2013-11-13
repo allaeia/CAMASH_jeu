@@ -16,9 +16,9 @@
 	</head>
 	<body onLoad="setup();">
 	<div id="ma_div">
-		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><!-- onload="init(evt)">
-		<svg onclick='alert("a")' id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><!-- onload="init(evt)">
-			<script type="text/ecmascript"><![CDATA[
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+			<!-- onload="init(evt)"><svg onclick='alert("a")' id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">-->
+			<!-- onload="init(evt)">			<script type="text/ecmascript"><![CDATA[
 				function init(evt) {
   				svgDocument = evt.target.ownerDocument;
 				}
@@ -81,7 +81,6 @@
 										height="100%" type="image/svg+xml" />
 							</object>
 						</foreignObject>
-					</g>
 			</svg>
 			<foreignObject id="sac" x="2.8%" y="70%"  width="20%" height="100%">
 				<object data="../img/sac.svg" width="100%"
@@ -169,6 +168,7 @@ console.log(paysage.outerWidth(true));
 		style="fill:rgb(170,222,135)"/>
 	-->	
 	</svg>
+</svg>
 	</div>
 
 <!--	<script>var svg = document.getElementsByTagName('object')[0].contentDocument.getElementsByTagName('svg')[0];
