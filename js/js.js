@@ -129,7 +129,6 @@ console.log(x);
 	{
 		var texte = "tu as trouver";
 		var texte2 = "bravo";
-		console.log(texte);
 		ajax_lecture(texte,texte);
 		window.setTimeout(function(){ajax_lecture(texte2,texte2)},1000);
 		for(var key in tab2)
@@ -157,7 +156,7 @@ console.log(x);
 		ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
-			window.setTimeout(function(){ajax_lecture(texte2,texte);
+			window.setTimeout(function(){ajax_lecture(texte2,texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},2000)
 			},1500)
