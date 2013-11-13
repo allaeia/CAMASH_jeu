@@ -14,7 +14,7 @@
    id="svg26843"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 69">
+   sodipodi:docname="W.svg">
   <defs
      id="defs26845" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.43203125"
-     inkscape:cx="192.40825"
-     inkscape:cy="520"
+     inkscape:zoom="0.27845764"
+     inkscape:cx="693.056"
+     inkscape:cy="922.1537"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,14 +54,15 @@
      transform="translate(0,-2.3621826)">
     <text
        xml:space="preserve"
-       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#37c8ab;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
-       x="-17.905865"
-       y="1052.3622"
+       style="font-size:1136.58654785px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#37c8ab;fill-opacity:1;stroke:#000000;stroke-width:3.87424636;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-14.437222"
+       y="1052.925"
        id="text26851"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan26853"
-         x="-17.905865"
-         y="1052.3622">W</tspan></text>
+         x="-14.437222"
+         y="1052.925"
+         style="stroke-width:3.87424636">W</tspan></text>
   </g>
 </svg>
