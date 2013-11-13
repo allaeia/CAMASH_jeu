@@ -30,8 +30,8 @@ function Lettre(obj,lettre){
 		this.anim_function();
 		if(this.move==true)
 		{
-			var that = this;
 			this.in_move=true;
+			var that = this;
 			window.setTimeout(function(){that.anim_2()},50);
 		}
 	};
@@ -84,7 +84,7 @@ function Lettre(obj,lettre){
 			if(this.resize_end)
 				this.anim_function = this.diminuer_size;
 			else
-				this.mive=false;
+				this.move=false;
 		}
 	};
 	this.anim2 = function(){
