@@ -148,6 +148,10 @@ console.log(x);
 				a.anim();
 			}
 		}
+		//on fait rotater le soleil
+		$(document).ready(function(){
+			$('#soleil').rotateAnimation(90);
+		});
 	}
 	else
 	{
@@ -300,7 +304,16 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 		{
 			lettre=non_uniforme(); 
 		}
-		tab.push(lettre);
+		if(lettre=="C" || lettre=="K" || lettre=="Q")
+		{
+			tab.push("C");
+			tab.push("K");
+			tab.push("Q");
+		}
+		else
+		{
+			tab.push(lettre);
+		}
 	}
 	else
 	{
