@@ -9,102 +9,59 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1050"
+   height="1050"
+   id="svg6425"
    version="1.1"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 1050 1050"
-   width="100%"
-   height="100%"
-   id="svg3051"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="D.svg">
+   sodipodi:docname="Nouveau document 10">
+  <defs
+     id="defs6427" />
   <sodipodi:namedview
+     id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     id="namedview3006"
+     inkscape:zoom="0.15274611"
+     inkscape:cx="481.98759"
+     inkscape:cy="284.41538"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="0.63714286"
-     inkscape:cx="525"
-     inkscape:cy="525"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3051" />
-  <defs
-     id="defs3053" />
+     inkscape:window-width="784"
+     inkscape:window-height="822"
+     inkscape:window-x="800"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3056">
+     id="metadata6430">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(1.05,0,0,1.05,-23.218215,-41.585596)">
-    <path
-       d="M 68.583354,46.069979 C 5.4218143,501.71195 18.852414,841.88517 96.146154,1033.1406 l 386.943416,-4.2207 C 670.30363,978.27777 683.74321,840.22257 718.11891,712.69865 724.29371,334.64366 579.82519,170.83704 401.89763,54.616529 z"
-       id="path3035"
-       style="fill:none;stroke:#000000;stroke-width:12.92935181px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 258.53011,203.37984 c -92.62104,395.78347 -18.08374,532.11577 19.4429,658.88287 84.49746,26.42076 144.40112,22.5722 175.20372,-17.093 94.899,-77.82474 61.8344,-222.19066 59.8257,-350.40742 C 491.61143,400.24385 461.96717,320.0392 395.27447,246.1124 349.69293,230.24094 304.11151,186.24714 258.53011,203.37984 z"
-       id="path3037"
-       style="fill:none;stroke:#000000;stroke-width:12.92935181px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
+     transform="translate(0,-2.3621826)">
+    <text
+       xml:space="preserve"
+       style="font-size:1466.84851073999990000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:#000000;font-family:Arial;-inkscape-font-specification:Arial;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-113.16507"
+       y="1052.3622"
+       id="text6433"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6435"
+         x="-113.16507"
+         y="1052.3622">D</tspan></text>
   </g>
-  <path
-     style="color:#000000;fill:#ff6600;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     d="M 76.021251,1015.4618 C 18.730654,855.80826 1.3890684,610.91841 25.114406,296.57902 30.741467,222.02549 39.759463,135.92185 51.39696,45.633695 l 3.980067,-30.878888 6.155853,0.01245 c 3.385722,0.0068 80.04407,1.950376 170.35188,4.318939 l 164.19604,4.306477 15.85832,10.819466 C 521.96199,109.2761 596.4848,191.43137 645.98632,292.22988 c 50.44646,102.7227 76.60335,230.94177 76.66556,375.80884 l 0.0174,40.05527 -13.13658,50.40682 c -16.8705,64.73434 -28.03719,98.16164 -42.63535,127.62808 -14.44675,29.1608 -29.0365,49.98524 -49.47723,70.62064 -30.65761,30.94952 -71.23419,54.61857 -119.16642,69.51177 l -14.78708,4.5946 -136.56296,1.5697 c -75.10963,0.8634 -165.13681,1.9923 -200.0604,2.5086 l -63.497431,0.9388 -7.324385,-20.4112 -1.92e-4,0 z M 401.35919,885.28345 c 6.88656,-1.52817 18.33931,-5.54044 25.45058,-8.91615 10.91562,-5.18163 16.34683,-9.55864 34.86844,-28.1004 29.86802,-29.90049 43.03144,-50.4345 53.74297,-83.83516 10.92514,-34.0668 14.62478,-63.57919 14.59705,-116.44228 -0.0105,-21.52823 -0.90405,-52.84204 -1.98387,-69.58622 -1.07984,-16.74419 -2.71689,-47.03276 -3.6379,-67.30796 -1.36422,-30.03246 -2.51109,-40.18766 -6.18871,-54.79915 -25.64674,-101.89674 -56.19548,-166.72229 -108.67668,-230.61598 -7.17608,-8.73657 -14.02706,-15.92951 -15.22439,-15.98429 -1.19734,-0.0548 -19.20277,-8.78739 -40.01208,-19.40578 -45.23183,-23.08048 -62.87493,-29.4042 -82.03746,-29.4042 -7.39453,0 -17.33612,1.15566 -22.09243,2.56812 l -8.64781,2.56813 -9.00978,42.22801 c -41.99777,196.83973 -49.16431,339.87936 -23.73134,473.66261 6.60558,34.74685 14.61754,64.27765 34.98813,128.9606 l 18.69878,59.37436 20.03977,5.35245 c 18.60708,4.9698 40.70905,9.65885 53.09325,11.26401 15.06037,1.95205 54.06874,1.01443 65.76348,-1.58072 l 0,0 z"
-     id="path3046"
-     inkscape:connector-curvature="0" />
-  <script
-     id="script3073">
-	document.getElementById(&quot;svg3051&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-      
-      // call a method in the parent document if it exists
-      if (window.parent.svgElementClicked)
-				window.parent.svgElementClicked(target);
-			else
-				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
-		}
-  </script>
-  <!--
-  <script xlink:href="../../../src/js.js"/>
-  <script>
-	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt)
-		{
-			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
-			var target = evt.target;
-			if(target.correspondingUseElement)
-				target = target.correspondingUseElement;
-				
-				//svgElementClicked(target);
-				top.svgElementClicked(target);
-			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
-		}
-  </script>-->
 </svg>
