@@ -161,7 +161,7 @@ console.log(x);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},3000)
 			},duree+500)
-		},3000);
+		},3500);
 
 		lettre.move = false;
 		lettre.len = 100;
