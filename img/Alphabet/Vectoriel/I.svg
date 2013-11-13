@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   preserveAspectRatio="xMinYMin meet"
+   viewBox="0 0 1050 1050"
+   width="100%"
+   height="100%"
+   id="svg3121"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hih.svg">
+  <defs
+     id="defs3123" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.63714286"
+     inkscape:cx="525"
+     inkscape:cy="525"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3126">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.91370454,-4.09375)">
+    <path
+       style="fill:#00ff00;stroke:#000000;stroke-width:12.92886257px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 5.5995635,10.587883 C 17.876611,17.65593 17.684583,161.97477 6.6821572,149.74555 -1.8242437,140.29066 244.5793,140.47219 237.73003,171.71813 188.9306,394.33799 209.63437,650.92183 226.98508,920.57004 229.42808,958.53678 -1.1173541,926.90794 5.6969139,917.96195 17.551753,902.39855 32.110848,1034.5701 6.5739797,1047.659 252.98275,1019.9841 495.3408,1032.8164 737.65901,1046.0469 714.34092,1018.1448 742.78309,909.47361 735.12796,921.72551 706.82106,967.03025 444.8517,930.79687 440.64062,909.57442 391.42713,661.55435 386.4614,414.53197 420.29831,182.12888 426.89219,136.83994 738.96068,170.12895 731.264,178.08234 713.20669,196.7419 699.8997,33.08819 731.39952,12.774826 489.4662,48.073739 247.53288,42.197902 5.5995635,10.587883 z"
+       id="path2987"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssccsssscc" />
+  </g>
+  <script
+     id="script3165">
+	document.getElementById(&quot;svg3121&quot;).addEventListener(&quot;click&quot;,sendClickToParentDocument,false);
+	function sendClickToParentDocument(evt)
+		{
+			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
+			var target = evt.target;
+			if(target.correspondingUseElement)
+				target = target.correspondingUseElement;
+      
+      // call a method in the parent document if it exists
+      if (window.parent.svgElementClicked)
+				window.parent.svgElementClicked(target);
+			else
+				alert(&quot;You clicked '&quot; + target.id + &quot;' which is a &quot; + target.nodeName + &quot; element&quot;);
+		}
+  </script>
+  <!--
+  <script xlink:href="../../../src/js.js"/>
+  <script>
+	document.getElementById("svg3020").addEventListener("click",sendClickToParentDocument,false);
+	function sendClickToParentDocument(evt)
+		{
+			// SVGElementInstance objects aren't normal DOM nodes, so fetch the corresponding 'use' element instead
+			var target = evt.target;
+			if(target.correspondingUseElement)
+				target = target.correspondingUseElement;
+				
+				//svgElementClicked(target);
+				top.svgElementClicked(target);
+			//	alert("You clicked '" + target.id + "' which is a " + target.nodeName + " element");
+		}
+  </script>-->
+</svg>
