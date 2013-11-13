@@ -278,7 +278,6 @@ function tirer_lettre(n)
 	tab.push(trouver);
 	
 	lettre_a_trouver = trouver;
-	son_a_trouver=son(lettre_a_trouver);
 	trouver_son=son(trouver);
 	var duree = duration_lettre(trouver);
 	var size = ajax_size(vous_devez);
