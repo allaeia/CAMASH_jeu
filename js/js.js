@@ -155,11 +155,12 @@ console.log(x);
 		var texte2 = "tu dois trouver la lettre";
 		ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
+		var duree = duration_lettre(lettre.lettre);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
 			window.setTimeout(function(){ajax_lecture(texte2,texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},2000)
-			},1500)
+			},duree)
 		},2000);
 
 		lettre.move = false;
@@ -283,11 +284,11 @@ function tirer_lettre(n)
 	var size = ajax_size(vous_devez);
 	if(size==0)
 	{
-		size=3;
+		size=2;
 	}
 
     	window.setTimeout(function(){ajax_lecture(trouver,trouver_son);
-		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},duree);},size*1000);
+		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},duree+1000);},size*1000);
 }
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
@@ -362,7 +363,7 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 		//*** d'asynchrone
 		var duree = duration_lettre(lettre);
 		window.setTimeout(function(){jQuery('audio').each(function(){this.pause();});//le id a pas été trouvé dans le code ==> marche pas quand dynamique
-			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},500);},duree);
+			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},1000);},duree);
 			//raccourcir si consonne 
 	}
 }
@@ -421,14 +422,13 @@ function duration_lettre(lettre)
 	{
 		size=3;
 	}
-	var duree;
 	if(is_consonne(lettre))
 	{
-		return duree=size*1000/2;
+		return size*1000/2;
 	}
 	else
 	{
-		return duree=size*1000;
+		return size*1000;
 	}
 }
 
