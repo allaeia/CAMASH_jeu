@@ -149,9 +149,13 @@ console.log(x);
 			}
 		}
 		//on fait rotater le soleil
-		$(document).ready(function(){
-			$('#soleil').rotateAnimation(90);
-		});
+		var w = parseInt($("#soleil").attr("width").split("%")[0])/100;
+		var h = parseInt($("#soleil").attr("height").split("%")[0])/100;
+		var x = parseInt($("#soleil").attr('x').split("px")[0]);
+		var y = parseInt($("#soleil").attr('y').split("px")[0]);
+		$('#soleil').css('transform', 'rotate(25deg)');
+		//erreur et pas uniforme
+		$('#soleil').css('transform-origin', (x+w)+'% '+(y+h)+'%');
 	}
 	else
 	{
@@ -280,7 +284,16 @@ function tirer_lettre(n)
 	var index = Math.floor(Math.random() * 5);
 	var vous_devez="tu dois trouver la lettre";
 	ajax_lecture(vous_devez,vous_devez);
-	tab.push(trouver);
+	if(trouver=="C" || trouver=="K" || trouver=="Q")
+	{
+		tab.push("C");
+		tab.push("K");
+		tab.push("Q");
+	}
+	else
+	{
+		tab.push(trouver);
+	}
 	
 	lettre_a_trouver = trouver;
 	trouver_son=son(trouver);
@@ -444,4 +457,4 @@ function duration_lettre(lettre)
 	}
 }
 
-
+-webkit-transform-origin
