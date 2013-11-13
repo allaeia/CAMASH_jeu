@@ -8,7 +8,7 @@
 			$type="x-wav";
 			$nom=str_replace(" ","_",$nom);
 			if(! file_exists($nom)) {
-				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&r=-5&src=%22'.$q.'%22&c=wav';
+				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&r=-2&src=%22'.$s.'%22&c=wav';
 				$commande = 'wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 				exec($commande);
 			}
@@ -18,7 +18,7 @@
 			$type="mpeg";
 			$nom=str_replace(" ","_",$nom_mp3);
 			if(! file_exists($nom_mp3)) {
-				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
+				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$s.'%22';
 				$commande ='wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 				exec($commande);
 			}
