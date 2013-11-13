@@ -130,7 +130,7 @@ console.log(x);
 		var texte = "tu as trouver";
 		var texte2 = "bravo";
 		ajax_lecture(texte,texte);
-		window.setTimeout(function(){ajax_lecture(texte2,texte2)},1000);
+		window.setTimeout(function(){ajax_lecture(texte2,texte2)},2000);
 		for(var key in tab2)
 		{
 			a=tab2[key];
@@ -364,7 +364,6 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 		var duree = duration_lettre(lettre);
 		window.setTimeout(function(){jQuery('audio').each(function(){this.pause();});//le id a pas été trouvé dans le code ==> marche pas quand dynamique
 			window.setTimeout(function(){tirer_lettre_2(n_total,i,tab,trouver,index)},1000);},duree);
-			//raccourcir si consonne 
 	}
 }
 
