@@ -17,6 +17,7 @@ function Lettre(obj,lettre){
 	this.yfin = 0;
 	this.step = 0;
 	this.len = 0;
+	this.resize_end = false;
 	this.curv = function(){};
 	this.stop = function(){this.anim=function(){};};
 	this.anim_function = function(){};;
@@ -42,12 +43,19 @@ function Lettre(obj,lettre){
 	{
 		var w = parseInt(this.obj.attr('width').split("%")[0]);
 		var w2 = w - 0.1;
+		var x0 = parseInt(this.obj.attr('x').split("px")[0]);
+		var y0 = parseInt(this.obj.attr('y').split("px")[0]);
+		var x = x0 + 4.5;
+		var y = y0 + 5;
+
 		if(w2<0)
 		{
 			w2=0;
 			this.move = false;
 		}
 		this.obj.attr('width',w2+"%");
+		this.obj.attr('x',x+"px");
+		this.obj.attr('y',y+"px");
 	};
 	this.anim1 = function (){
 
@@ -73,7 +81,10 @@ function Lettre(obj,lettre){
 		}
 		else
 		{
-			this.anim_function = this.diminuer_size;
+			if(this.resize_end)
+				this.anim_function = this.diminuer_size;
+			else
+				this.mive=false;
 		}
 	};
 	this.anim2 = function(){
@@ -131,7 +142,7 @@ console.log(x);
 				a.step = 0;
 				a.xfin = 208;
 				a.yfin = 840;
-	
+				a.resize_end=true;
 				a.anim_function=lettre.anim1;
 				a.move = true;
 				a.anim();
@@ -156,7 +167,8 @@ console.log(x);
 		lettre.step = 0;
 		lettre.xfin = 208;
 		lettre.yfin = 840;
-		
+
+		lettre.resize_end=true;	
 		lettre.anim_function=lettre.anim1;
 		lettre.move = true;
 		lettre.anim();
@@ -202,6 +214,7 @@ function anim2(lettre)
 	lettre.len = 100;
 	lettre.step = 0;
 	lettre.anim_function=lettre.anim1;
+	lettre.resize_end=false;
 	lettre.move = true;
 	lettre.anim();
 }
