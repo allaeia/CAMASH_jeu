@@ -159,9 +159,9 @@ console.log(x);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
 			window.setTimeout(function(){ajax_lecture(texte2,texte2);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
-				},2000)
+				},3000)
 			},duree+500)
-		},2000);
+		},3000);
 
 		lettre.move = false;
 		lettre.len = 100;
