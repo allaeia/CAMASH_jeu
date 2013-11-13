@@ -39,7 +39,7 @@ function Lettre(obj,lettre){
 		if(this.in_move==false)
 			this.anim_2();
 	};
-	function diminuer_size()
+	this.diminuer_size = function()
 	{
 		var w = parseInt(this.obj.attr('width').split("%")[0]);
 		var w2 = w - 0.1;
