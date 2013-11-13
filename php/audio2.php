@@ -1,5 +1,5 @@
 <?php
-	function lecture($q) {
+	function lecture($q,$s) {
 		$r=str_replace("%20","_",$q);
 		$nom_mp3='../snd/'.$r.'.mp3';
 		if(strpos($_SERVER['HTTP_USER_AGENT'],'OPR')
@@ -8,7 +8,7 @@
 			$type="x-wav";
 			$nom=str_replace(" ","_",$nom);
 			if(! file_exists($nom)) {
-				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&r=-5&src=%22'.$q.'%22&c=wav';
+				$url='http://api.voicerss.org/?key=1baf863afafb4d04bab1a3803fc92b0a&hl=fr-fr&r=-5&src=%22'.$s.'%22&c=wav';
 				$commande = 'wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 				exec($commande);
 			}
@@ -18,7 +18,7 @@
 			$type="mpeg";
 			$nom=str_replace(" ","_",$nom_mp3);
 			if(! file_exists($nom_mp3)) {
-				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$q.'%22';
+				$url='http://translate.google.com/translate_tts?tl=fr&q=%22'.$s.'%22';
 				$commande ='wget --user-agent=" " "'.$url.'" -O "'.$nom.'"';
 				exec($commande);
 			}
@@ -28,7 +28,7 @@
 ?>
 
 <?php
-	$tmp=lecture($_GET["mot"]);
+	$tmp=lecture($_GET["mot"],$_GET["son"]);
 	echo "<source src=".$tmp[0]." type='audio/".$tmp[1]."' />";
 ?>
 
