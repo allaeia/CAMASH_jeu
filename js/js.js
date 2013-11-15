@@ -157,7 +157,7 @@ console.log(x);
 		//$('#soleil').css('transform', 'translate('+(-w/2)+','+(-h/2)+')');
 		//$('#soleil').css('transform', 'rotate(10deg)');
 		//$('#soleil').css('transform', 'translate('+(w/2)+','+(h/2)+')');
-		//erreur et pas uniforme
+		//plus d'erruer mais disparait...
 		var rotation = function (){
 		   $("#soleil").rotate({
 		      angle:0, 
