@@ -149,13 +149,26 @@ console.log(x);
 			}
 		}
 		//on fait rotater le soleil
-		var w = parseInt($("#soleil").attr("width").split("%")[0])/100;
-		var h = parseInt($("#soleil").attr("height").split("%")[0])/100;
-		var x = parseInt($("#soleil").attr('x').split("px")[0]);
-		var y = parseInt($("#soleil").attr('y').split("px")[0]);
-		$('#soleil').css('transform', 'rotate(25deg)');
+		//var w = parseInt($("#soleil").attr("width").split("%")[0])/100;
+		//var h = parseInt($("#soleil").attr("height").split("%")[0])/100;
+		//var x = parseInt($("#soleil").attr('x').split("px")[0]);
+		//var y = parseInt($("#soleil").attr('y').split("px")[0]);
+		//$('#soleil').css('transform-origin', '50% 50%');
+		//$('#soleil').css('transform', 'translate('+(-w/2)+','+(-h/2)+')');
+		//$('#soleil').css('transform', 'rotate(10deg)');
+		//$('#soleil').css('transform', 'translate('+(w/2)+','+(h/2)+')');
 		//erreur et pas uniforme
-		$('#soleil').css('transform-origin', (x+w)+'% '+(y+h)+'%');
+		var rotation = function (){
+		   $("#soleil").rotate({
+		      angle:0, 
+		      animateTo:360, 
+		      callback: rotation,
+		      easing: function (x,t,b,c,d){
+			  return c*(t/d)+b;
+		      }
+		   });
+		}
+		rotation();
 	}
 	else
 	{
