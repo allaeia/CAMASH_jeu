@@ -149,8 +149,8 @@ console.log(x);
 			}
 		}
 		//on fait rotater le soleil
-		//var w = parseInt($("#soleil").attr("width").split("%")[0])/100;
-		//var h = parseInt($("#soleil").attr("height").split("%")[0])/100;
+		var w = parseInt($("#soleil").attr("width").split("%")[0])/100;
+		var h = parseInt($("#soleil").attr("height").split("%")[0])/100;
 		//var x = parseInt($("#soleil").attr('x').split("px")[0]);
 		//var y = parseInt($("#soleil").attr('y').split("px")[0]);
 		//$('#soleil').css('transform-origin', '50% 50%');
@@ -158,8 +158,9 @@ console.log(x);
 		//$('#soleil').css('transform', 'rotate(10deg)');
 		//$('#soleil').css('transform', 'translate('+(w/2)+','+(h/2)+')');
 		//plus d'erruer mais disparait...
-		var rotation = function (){
-		   $("#soleil").rotate({
+		$("#soleil").attr("transform", "rotate(60 "+(w/2)+" "+(h/2)+")");
+		//var rotation = function (){
+		/*   $("#soleil").rotate({
 		      angle:0, 
 		      animateTo:360, 
 		      callback: rotation,
@@ -168,7 +169,7 @@ console.log(x);
 		      }
 		   });
 		}
-		rotation();
+		rotation();*/
 	}
 	else
 	{
