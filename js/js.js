@@ -148,24 +148,7 @@ console.log(x);
 				a.anim();
 			}
 		}
-		//on fait rotater le soleil
-		var w = parseInt($("#soleil").attr("width").split("%")[0]);//= 10%
-		var h = parseInt($("#soleil").attr("height").split("%")[0]);//= 100%
-		var x = parseInt($("#soleil").attr('x').split("px")[0]);//= 5% 
-		var y = parseInt($("#soleil").attr('y').split("px")[0]);//= 5%
-		console.log(w+" "+h+" "+x+" "+y);
-		for (var i=0; i<5; i++)
-		{
-			//pas la bonne équation ! On pourrais pisser dans un violon ça ferrait parreil ><
-			console.log(x-(w/2)+" 0");
-			console.log(y-(h/2)+" -45");
-			//bien valeurs attendues mais pas d'effet du décallafe des x/y...
-			$("#soleil").attr('x',(x-(w/2))+"%");
-			$("#soleil").attr('y',(y-(h/2))+"%");
-			$("#soleil").attr("transform", "rotate(60)");
-			$("#soleil").attr('x',(x)+"%");
-			$("#soleil").attr('y',(y)+"%");
-		}
+		animation_victoire_defaite("animSoleil","")
 	}
 	else
 	{
@@ -180,6 +163,7 @@ console.log(x);
 				},3000)
 			},2000)
 		},2500);
+		animation_victoire_defaite("animSoleil","pas_")
 
 		lettre.move = false;
 		lettre.len = 100;
@@ -464,5 +448,43 @@ function duration_lettre(lettre)
 	else
 	{
 		return size*1000;
+	}
+}
+
+function animation_victoire_defaite(div,content)
+{
+	$("#"+div).attr("data", "../img/animations/soleil_"+content+"content_1.svg");
+	rotation_soleil(div,0,0);
+
+	window.setTimeout(function(){rotation_soleil_inv(div,10,0);
+		window.setTimeout(function(){rotation_soleil(div,0,0);
+			window.setTimeout(function(){rotation_soleil_inv(div,10,0)},3000);},3000);},3000);
+}
+
+function rotation_soleil(src,angle,index)
+{
+	console.log("norm "+index);
+	$("#"+src).css('-moz-transform-origin', 'center');
+        $("#"+src).css('-webkit-transform-origin', 'center center');
+        $("#"+src).css('-o-transform-origin', 'center center');
+       	$("#"+src).css('transform-origin', 'center center');
+	$("#"+src).css('transform', 'rotate('+angle+'deg)');
+	if(index<10)
+	{
+		window.setTimeout(function(){rotation_soleil(src,(angle+1),(index+1))},250);
+	}
+}
+
+function rotation_soleil_inv(src,angle,index)
+{
+	console.log("inv "+index);
+	$("#"+src).css('-moz-transform-origin', 'center');
+        $("#"+src).css('-webkit-transform-origin', 'center center');
+        $("#"+src).css('-o-transform-origin', 'center center');
+       	$("#"+src).css('transform-origin', 'center center');
+	$("#"+src).css('transform', 'rotate('+angle+'deg)');
+	if(index<10)
+	{
+		window.setTimeout(function(){rotation_soleil_inv(src,(angle-1),(index+1))},250);
 	}
 }
