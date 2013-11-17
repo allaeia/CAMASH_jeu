@@ -8,6 +8,63 @@ var alphabet_voyelles = ["O","U","Y","A","E","I"];
 var son_consonnes = ["beu","que","deu","feu","gueu","h","j","que","leu","meu","peu","queue","reu","vai","w","hix","ze","te","seu","neux"];
 var son_voyelles = ["o","u","y","a","e","hih"];
 
+function Soleil()
+{
+	this.start_angle = [0,10,0,10]
+	this.start_angle_delta = [1,-1,1,-1]
+	this.angle = 0;
+	this.delta_angle = 1;
+	this.index = 0;
+	this.n_state = 0;
+	this.max_n_state = 4;
+
+	this.continu = false;
+	this.content = "";
+	this.div = "animSoleil";
+	this.anim_function = function(){
+		$("#"+this.div).css('-moz-transform-origin', 'center');
+        $("#"+this.div).css('-webkit-transform-origin', 'center center');
+        $("#"+this.div).css('-o-transform-origin', 'center center');
+       	$("#"+this.div).css('transform-origin', 'center center');
+		$("#"+this.div).css('transform', 'rotate('+this.angle+'deg)');
+		this.index = this.index + 1;
+		this.angle = this.angle + this.delta_angle;
+		if(this.index>10)
+		{
+			if(this.n_state<this.max_n_state)
+			{
+				this.n_state = this.n_state + 1;
+				this.index = 0;
+				this.angle = this.start_angle[this.n_state];
+				this.delta_angle = this.start_angle_delta[this.n_state];
+			}
+			else
+			{
+				this.anim=false;
+			}
+		}
+	}
+	this.animate_2 = function(){	
+			this.anim=true;
+			this.anim_function();
+			if(this.anim==true)
+			{
+				var that = this;
+				window.setTimeout(function(){that.animate_2()},100);
+			}
+	};
+	this.animate = function(){
+		$("#"+this.div).attr("data", "../img/animations/soleil_"+this.content+"content_1.svg");
+		this.n_state = 0;
+		this.index = 0;
+		this.angle = this.start_angle[this.n_state];
+		this.delta_angle = this.start_angle_delta[this.n_state];
+
+		if(!this.anim)
+			this.animate_2();
+	};
+}
+var soleil = new Soleil();
 function Lettre(obj,lettre){
 	this.lettre = lettre;
 	this.obj = obj;
@@ -148,7 +205,9 @@ console.log(x);
 				a.anim();
 			}
 		}
-		animation_victoire_defaite("animSoleil","")
+		soleil.content = "";
+		soleil.animate();
+//		animation_victoire_defaite("animSoleil","")
 	}
 	else
 	{
@@ -163,7 +222,9 @@ console.log(x);
 				},3000)
 			},2000)
 		},2500);
-		animation_victoire_defaite("animSoleil","pas_")
+		soleil.content = "pas_";
+		soleil.animate();
+		//animation_victoire_defaite("animSoleil","pas_")
 
 		lettre.move = false;
 		lettre.len = 100;
@@ -450,7 +511,6 @@ function duration_lettre(lettre)
 		return size*1000;
 	}
 }
-
 function animation_victoire_defaite(div,content)
 {
 	$("#"+div).attr("data", "../img/animations/soleil_"+content+"content_1.svg");
