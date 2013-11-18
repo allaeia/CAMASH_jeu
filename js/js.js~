@@ -2,6 +2,7 @@ var doc;
 var tab2 = [];
 var lettre_a_trouver;
 var son_a_trouver;
+var lettre_a_trouver_obj;
 
 var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
 var alphabet_voyelles = ["O","U","Y","A","E","I"];
@@ -40,7 +41,10 @@ function Audio()
 		this.currentSon=new_id;
 		this.nextSon=new_next_son;
 		console.log(this.currentSon);
-		this.current_id_son = document.getElementById("son_"+this.currentSon);
+		var id = "son_"+this.currentSon;
+		console.log(id);
+		this.current_id_son = document.getElementById(id);
+		console.log(this.current_id_son);		
 		this.current_id_son.play();
 		this.play=true;
 	};
@@ -69,11 +73,10 @@ function Audio()
 	};
 }
 
-var audio;
+var mon_audio;
 
 function Init_audio()
 {
-	console.log("isugfirez");
 	var str="tu dois trouver la lettre";
 	ajax_load_balise(0,str,str);
 	str = "tu as cliquer sur la lettre";
@@ -84,8 +87,8 @@ function Init_audio()
 	ajax_load_balise(3,str,str);
 	str = "tu as trouver";
 	ajax_load_balise(4,str,str);
-	audio = new Audio();
-	audio.loop();
+	mon_audio = new Audio();
+	mon_audio.loop();
 }
 
 function ajax_load_balise(id,nom,son)
@@ -331,7 +334,8 @@ console.log(x);
 	{
 		var texte = "tu as cliquer sur la lettre";
 		var texte2 = "tu dois trouver la lettre";
-		ajax_lecture(texte,texte);
+		mon_audio.changerSon(1,[lettre.idAudio,2,lettre_a_trouver_obj.idAudio]);
+		/*ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
 		var duree = duration_lettre(lettre.lettre);
 		window.setTimeout(function(){ajax_lecture(lettre.lettre,son_lettre);
@@ -339,7 +343,7 @@ console.log(x);
 				window.setTimeout(function(){ajax_lecture(lettre_a_trouver,son_a_trouver)
 				},3000)
 			},2000)
-		},2500);
+		},2500);*/
 		soleil.content = "pas_";
 		soleil.animate();
 		//animation_victoire_defaite("animSoleil","pas_")
@@ -422,7 +426,7 @@ function anim_hzbfgoqlk(obj,step,len,curv)
 function setup2(elem)
 {
  	Init_audio();
-	tirer_lettre(5);
+	window.setTimeout(function(){tirer_lettre(5)},1000);
 	
 	//doc=elem;
 	//console.log(elem);
@@ -472,7 +476,7 @@ function tirer_lettre(n)
 	ajax_load_balise(5+index,trouver,trouver_son);
 
 
-	audio.changerSon(0,[(5+index)]);
+	mon_audio.changerSon(0,[(5+index)]);
 
 
 	/*var duree = duration_lettre(trouver);
@@ -560,6 +564,10 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	//console.log(lettre);
 
 	var current_lettre = new Lettre($(elem),lettre);
+	if(i==index)
+	{
+		lettre_a_trouver_obj=current_lettre;
+	}
 	current_lettre.idAudio=idSon;
 
 	console.log($(elem).attr("id"));	
