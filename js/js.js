@@ -202,6 +202,7 @@ function svgElementClicked(theElement)
 {
 	if(gagner)
 		return;
+	//jQuery('audio').each(function(){this.pause();});
 	//alert( "A <> element.");
 	console.log(theElement);
 	var id=theElement.getAttributeNS(null,"id");
@@ -495,7 +496,7 @@ function ajax_lecture(lettre,lettre_son)
 		url: "../php/audio2.php",
 		data: "mot="+lettre+"&son="+lettre_son,
 		success: function(msg){
-			audio='<audio id=son_"'+lettre+'" controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>';
+			audio='<audio id=son_'+lettre+' controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>';
 			$("#ma_div").append(audio);
 			//document.body.appendChild(audio);
 		}
