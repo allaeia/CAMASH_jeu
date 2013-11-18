@@ -567,12 +567,12 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	//console.log(lettre);
 
 	var current_lettre = new Lettre($(elem),lettre);
-	if(i==index)
+	current_lettre.idAudio=idSon;
+	if(i-1==index)
 	{
 		lettre_a_trouver_obj=current_lettre;
 	}
-	current_lettre.idAudio=idSon;
-
+	
 	console.log($(elem).attr("id"));	
 	tab2[$(elem).attr("id")]=current_lettre;
 	current_lettre.xfin = x;
