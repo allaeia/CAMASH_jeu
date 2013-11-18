@@ -8,6 +8,18 @@ var alphabet_voyelles = ["O","U","Y","A","E","I"];
 var son_consonnes = ["beu","que","deu","feu","gueu","h","j","que","leu","meu","peu","queue","reu","vai","w","hix","ze","te","seu","neux"];
 var son_voyelles = ["o","u","y","a","e","hih"];
 
+var SVGDocument = null;
+var SVGRoot = null;
+
+function Init(evt)
+{
+	SVGDocument = evt.target.ownerDocument;
+	SVGRoot = SVGDocument.documentElement;
+	SVGDocument.getElementById("soleil2").setAttributeNS(null, 'visibility', 'hidden');
+	SVGDocument.getElementById("soleil3").setAttributeNS(null, 'visibility', 'hidden');
+
+}
+
 function Soleil()
 {
 	this.start_angle = [0,10,0,10]
@@ -17,9 +29,11 @@ function Soleil()
 	this.index = 0;
 	this.n_state = 0;
 	this.max_n_state = 4;
+	this.currentSoleil = 1;
 
 	this.continu = false;
 	this.content = "";
+	this.divInit = "animSoleil";
 	this.div = "animSoleil";
 	this.anim_function = function(){
 		$("#"+this.div).css('-moz-transform-origin', 'center');
@@ -40,6 +54,9 @@ function Soleil()
 			}
 			else
 			{
+				SVGDocument.getElementById("soleil1").setAttributeNS(null, 'visibility', 'visible');
+				SVGDocument.getElementById("soleil2").setAttributeNS(null, 'visibility', 'hidden');
+				SVGDocument.getElementById("soleil3").setAttributeNS(null, 'visibility', 'hidden');
 				this.anim=false;
 			}
 		}
@@ -54,7 +71,21 @@ function Soleil()
 			}
 	};
 	this.animate = function(){
-		$("#"+this.div).attr("data", "../img/animations/soleil_"+this.content+"content_1.svg");
+		if(this.content=="")
+		{
+			this.currentSoleil=2;
+		}else{
+			this.currentSoleil=3;
+		}
+		this.div=this.divInit+this.currentSoleil;
+		for (var i=1; i<4; i++)
+		{
+			if(i==this.currentSoleil){
+				SVGDocument.getElementById("soleil"+i).setAttributeNS(null, 'visibility', 'visible');
+			}else{
+				SVGDocument.getElementById("soleil"+i).setAttributeNS(null, 'visibility', 'hidden');
+			}
+		}
 		this.n_state = 0;
 		this.index = 0;
 		this.angle = this.start_angle[this.n_state];

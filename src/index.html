@@ -17,7 +17,7 @@
 	</head>
 	<body onLoad="setup();">
 	<div id="ma_div">
-		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" onload='Init(evt)'>
 			<!-- onload="init(evt)"><svg onclick='alert("a")' id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">-->
 			<!-- onload="init(evt)">			<script type="text/ecmascript"><![CDATA[
 				function init(evt) {
@@ -33,10 +33,24 @@
 							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
-			<foreignObject id="soleil" x="5%" y="5%" width="10%" height="100%">
-				<object id="animSoleil" data="../img/soleil.svg" width="100%"
-					type="image/svg+xml">
-						<embed id="embSoleil" src="../img/soleil.svg" width="100%"
+			<foreignObject id="soleil1" x="5%" y="5%" width="10%" height="100%">
+				<object id="animSoleil1" data="../img/soleil.svg" width="100%"
+					type="image/svg+xml" >
+						<embed src="../img/soleil.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+			</foreignObject>
+			<foreignObject id="soleil2" x="5%" y="5%" width="10%" height="100%">
+				<object id="animSoleil2" data="../img/animations/soleil_content_1.svg" width="100%"
+					type="image/svg+xml" >
+						<embed src="../img/animations/soleil_content_1.svg" width="100%"
+							height="100%" type="image/svg+xml" />
+				</object>
+			</foreignObject>
+			<foreignObject id="soleil3" x="5%" y="5%" width="10%" height="100%">
+				<object id="animSoleil3" data="../img/animations/soleil_pas_content_1.svg" width="100%"
+					type="image/svg+xml" >
+						<embed src="../img/animations/soleil_pas_content_1.svg" width="100%"
 							height="100%" type="image/svg+xml" />
 				</object>
 			</foreignObject>
