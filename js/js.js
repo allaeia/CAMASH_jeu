@@ -3,6 +3,7 @@ var tab2 = [];
 var lettre_a_trouver;
 var son_a_trouver;
 var lettre_a_trouver_obj;
+var lettre_a_trouver_id_audio;
 
 var alphabet_consonnes = ["B","C","D","F","G","H","J","K","L","M","P","Q","R","V","W","X","Z","T","S","N"];
 var alphabet_voyelles = ["O","U","Y","A","E","I"];
@@ -337,7 +338,7 @@ console.log(x);
 		console.log("???"),
 		console.log(lettre);
 		console.log(lettre_a_trouver_obj);
-		mon_audio.changerSon(1,[lettre.idAudio,2,lettre_a_trouver_obj.idAudio]);
+		mon_audio.changerSon(1,[lettre.idAudio,2,lettre_a_trouver_id_audio]);
 		/*ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
 		var duree = duration_lettre(lettre.lettre);
@@ -473,7 +474,7 @@ function tirer_lettre(n)
 	{
 		tab.push(trouver);
 	}
-	
+	lettre_a_trouver_id_audio=5+index;
 	lettre_a_trouver = trouver;
 	trouver_son=son(trouver);
 	ajax_load_balise(5+index,trouver,trouver_son);
@@ -493,6 +494,7 @@ function tirer_lettre(n)
 		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},2000);},3000);
 */
 	window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},5000);
+	
 }
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
