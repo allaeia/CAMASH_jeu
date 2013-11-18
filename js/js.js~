@@ -22,6 +22,86 @@ function Init(evt)
 
 }
 
+function Audio()
+{
+	this.currentSon=0;
+	this.nextSon=[];
+	this.play=false;
+	this.current_id_son=0;
+
+	this.changerSon=function(new_id,new_next_son){
+		this.play=false;
+		if(this.current_id_son!=0)
+		{
+			this.current_id_son.pause();
+			this.current_id_son.currentTime=0;
+		}
+		
+		this.currentSon=new_id;
+		this.nextSon=new_next_son;
+		console.log(this.currentSon);
+		this.current_id_son = document.getElementById("son_"+this.currentSon);
+		this.current_id_son.play();
+		this.play=true;
+	};
+	
+	this.loop=function(){
+		if(this.play)
+		{
+			if(this.current_id_son.currentTime>=this.current_id_son.duration || this.current_id_son.ended)
+			{
+				this.play=false;
+				if(this.nextSon.length!=0)
+				{
+					this.current_id_son.pause();
+					this.current_id_son.currentTime=0;
+		
+					this.currentSon=this.nextSon[0];
+					this.nextSon.shift();
+					this.current_id_son = document.getElementById("son_"+this.currentSon);
+					this.current_id_son.play();					
+					this.plays=true;
+				}
+			}
+		}
+		var that = this;
+		window.setTimeout(function(){that.loop()},50);
+	};
+}
+
+var audio;
+
+function Init_audio()
+{
+	console.log("isugfirez");
+	var str="tu dois trouver la lettre";
+	ajax_load_balise(0,str,str);
+	str = "tu as cliquer sur la lettre";
+	ajax_load_balise(1,str,str);
+	str = "tu dois trouver la lettre";
+	ajax_load_balise(2,str,str);
+	str = "bravo";
+	ajax_load_balise(3,str,str);
+	str = "tu as trouver";
+	ajax_load_balise(4,str,str);
+	audio = new Audio();
+	audio.loop();
+}
+
+function ajax_load_balise(id,nom,son)
+{
+	$.ajax({
+		type: "GET",
+		url: "../php/audio2.php",
+		data: "mot="+nom+"&son="+son,
+		success: function(msg){
+			audio='<audio id=son_'+id+' >'+msg+'</audio>';
+			$("#audio").append(audio);
+		}
+	});
+}
+
+
 function Soleil()
 {
 	this.start_angle = [0,10,0,10]
@@ -99,6 +179,7 @@ function Soleil()
 }
 var soleil = new Soleil();
 function Lettre(obj,lettre){
+	this.idAudio="";
 	this.lettre = lettre;
 	this.obj = obj;
 	this.move = false;
@@ -202,7 +283,7 @@ function svgElementClicked(theElement)
 {
 	if(gagner)
 		return;
-	jQuery('audio').each(function(){this.pause();});
+	//jQuery('audio').each(function(){this.pause();});
 	//alert( "A <> element.");
 	console.log(theElement);
 	var id=theElement.getAttributeNS(null,"id");
@@ -340,6 +421,7 @@ function anim_hzbfgoqlk(obj,step,len,curv)
 }
 function setup2(elem)
 {
+ 	Init_audio();
 	tirer_lettre(5);
 	
 	//doc=elem;
@@ -374,8 +456,6 @@ function tirer_lettre(n)
 
 	var trouver = non_uniforme();
 	var index = Math.floor(Math.random() * 5);
-	var vous_devez="tu dois trouver la lettre";
-	ajax_lecture(vous_devez,vous_devez);
 	if(trouver=="C" || trouver=="K" || trouver=="Q")
 	{
 		tab.push("C");
@@ -389,7 +469,13 @@ function tirer_lettre(n)
 	
 	lettre_a_trouver = trouver;
 	trouver_son=son(trouver);
-	var duree = duration_lettre(trouver);
+	ajax_load_balise(5+index,trouver,trouver_son);
+
+
+	audio.changerSon(0,[(5+index)]);
+
+
+	/*var duree = duration_lettre(trouver);
 	var size = ajax_size(vous_devez);
 	if(size==0)
 	{
@@ -398,10 +484,13 @@ function tirer_lettre(n)
 
     	window.setTimeout(function(){ajax_lecture(trouver,trouver_son);
 		window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},2000);},3000);
+*/
+	window.setTimeout(function(){tirer_lettre_2(n,0,tab,trouver,index)},5000);
 }
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
+	var idSon=5+index;
 	if(gagner)
 	{
 		return;
@@ -422,7 +511,9 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 		else
 		{
 			tab.push(lettre);
-		}
+		}		
+		var str= son(lettre);
+		ajax_load_balise(idSon,lettre,str);
 	}
 	else
 	{
@@ -469,6 +560,7 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	//console.log(lettre);
 
 	var current_lettre = new Lettre($(elem),lettre);
+	current_lettre.idAudio=idSon;
 
 	console.log($(elem).attr("id"));	
 	tab2[$(elem).attr("id")]=current_lettre;
@@ -496,7 +588,7 @@ function ajax_lecture(lettre,lettre_son)
 		url: "../php/audio2.php",
 		data: "mot="+lettre+"&son="+lettre_son,
 		success: function(msg){
-			audio='<audio id=son_"'+lettre+'" controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>';
+			audio='<audio id=son_'+lettre+' controls="controls" autoplay="autoplay" style="display:none;">'+msg+'</audio>';
 			$("#ma_div").append(audio);
 			//document.body.appendChild(audio);
 		}
