@@ -11,6 +11,8 @@ var son_voyelles = ["o","u","y","a","e","hih"];
 var SVGDocument = null;
 var SVGRoot = null;
 
+var gagner = false;
+
 function Init(evt)
 {
 	SVGDocument = evt.target.ownerDocument;
@@ -198,6 +200,8 @@ function Lettre(obj,lettre){
 }
 function svgElementClicked(theElement)
 {
+	if(gagner)
+		return;
 	//alert( "A <> element.");
 	console.log(theElement);
 	var id=theElement.getAttributeNS(null,"id");
@@ -215,6 +219,7 @@ console.log(x);
 	var lettre = tab2[$(fo).attr("id")];
 	if(lettre.lettre == lettre_a_trouver)
 	{
+		gagner = true;
 		var texte = "tu as trouver";
 		var texte2 = "bravo";
 		ajax_lecture(texte,texte);
@@ -396,6 +401,10 @@ function tirer_lettre(n)
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
+	if(gagner)
+	{
+		return;
+	}
 	if(i!=index)
 	{
 		var lettre = non_uniforme();
@@ -469,7 +478,7 @@ function tirer_lettre_2(n_total,i,tab,trouver,index)
 	anim2(current_lettre);
 	var lettre_son=son(lettre);
 	//ajax_lecture(lettre,lettre_son);
-	if(i<n_total)
+	if(i<n_total&&!gagner)
 	{
 		//marche pas le ajax_size si la lettre est pas déjà définie. (duree=0, en fait la size est calculée avant que la download soit finie
 		//*** d'asynchrone
