@@ -37,14 +37,10 @@ function Audio()
 			this.current_id_son.pause();
 			this.current_id_son.currentTime=0;
 		}
-		
 		this.currentSon=new_id;
 		this.nextSon=new_next_son;
-		console.log(this.currentSon);
 		var id = "son_"+this.currentSon;
-		console.log(id);
 		this.current_id_son = document.getElementById(id);
-		console.log(this.current_id_son);		
 		this.current_id_son.play();
 		this.play=true;
 	};
@@ -61,10 +57,13 @@ function Audio()
 					this.current_id_son.currentTime=0;
 		
 					this.currentSon=this.nextSon[0];
+					console.log("!!!!");
+					console.log(this.nextSon);
 					this.nextSon.shift();
+					console.log(this.nextSon);
 					this.current_id_son = document.getElementById("son_"+this.currentSon);
 					this.current_id_son.play();					
-					this.plays=true;
+					this.play=true;
 				}
 			}
 		}
@@ -335,6 +334,9 @@ console.log(x);
 	{
 		var texte = "tu as cliquer sur la lettre";
 		var texte2 = "tu dois trouver la lettre";
+		console.log("???"),
+		console.log(lettre);
+		console.log(lettre_a_trouver_obj);
 		mon_audio.changerSon(1,[lettre.idAudio,2,lettre_a_trouver_obj.idAudio]);
 		/*ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
@@ -495,7 +497,7 @@ function tirer_lettre(n)
 
 function tirer_lettre_2(n_total,i,tab,trouver,index)
 {
-	var idSon=5+index;
+	var idSon=5+i;
 	if(gagner)
 	{
 		return;
