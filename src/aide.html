@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<title>Aide</title>
+	</head>
+	<body>
+	<div id="ma_div">
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" onload='Init(evt)'>
+			<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 1200">
+
+				<foreignObject id="paysage" x="0" y="60px" width="150%" height="100%">
+					<object data="../img/paysage.svg" width="100%"
+						height="100%" type="image/svg+xml">
+							<embed src="../img/paysage.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<foreignObject id="soleil1" x="5%" y="5%" width="10%" height="100%">
+					<object id="animSoleil1" data="../img/soleil.svg" width="100%"
+						type="image/svg+xml" >
+							<embed src="../img/soleil.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<foreignObject id="arbre" x="1150px" y="80px"  width="40%" height="100%">
+					<object data="../img/arbre.svg" width="100%"
+						type="image/svg+xml">
+							<embed src="../img/arbre.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<svg id="panneau_affiche" x="0px" y="200px" width="105%" height="100%" xmlns="http://www.w3.org/2000/svg">
+					<foreignObject id="panneau" x="0px" y="0px"  width="100%" height="100%">
+						<object data="../img/grand_panneau2.svg" width="100%"
+							type="image/svg+xml">
+							<embed src="../img/grand_panneau2.svg" width="100%"
+								height="100%" type="image/svg+xml" />
+						</object>
+					</foreignObject>
+					<foreignObject id="affiche" x="3%" y="15px"  width="92%" height="100%">
+						<object data="../img/papier.svg" width="100%"
+							type="image/svg+xml">
+								<embed src="../img/papier.svg" width="100%"
+									height="100%" type="image/svg+xml" />
+						</object>
+					</foreignObject>
+					<foreignObject id="texte" x="9%" y="70px" width="70%" height="100%">
+						
+							<h1>Principe de jeu</h1>
+							<p>
+							Le but du jeu est de r&eacute;ussir à associer une voix dictant une lettre et la m&ecirc;me lettre affichée &agrave; l’&eacute;cran.<br />
+							Pour cela, nous commen&ccedil;ons par mettre en place les lettres (qui sortent du sac et se dispersent sur le tableau).<br />
+							L’enfant doit cliquer sur la bonne lettre pour renvoyer les autres dans le sac. Tant qu'il se trompe, le jeu continue et la lettre sur laquelle il vient de cliquer s'enl&egrave;ve automatiquement
+							tandis qu'un message l'informe du nom de la lettre sur laquelle il vient de cliquer et de la lettre qu'il cherche.
+							En cas de r&eacute;ussite ou d’&eacute;chec une animation correspondante se lance.<br />
+							
+							<br /> 
+							Pour plus de d&eacute;tails, merci de consulter le dossier de conception ou le dossier d'aide technique dont les liens est ci-apr&egrave;s.
+							</p>
+							<br/>
+							<h1>Annexes</h1>
+							<p>
+								<a href="../Dossier_de_conception.pdf">Dossier de conception</a><br />
+								<a href="../Dossier_aide_technique.pdf">Aide technique</a>
+							</p>
+						
+					</foreignObject>
+				</svg>
+			</svg>
+		</svg>
+	</div>
+	</body>
+</html>

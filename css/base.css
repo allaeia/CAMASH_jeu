@@ -5,3 +5,8 @@ html, body, div {
   padding:0;
   background-color: #66EEF4;
 }
+
+#texte
+{
+	font-size: x-large;
+}
