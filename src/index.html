@@ -7,7 +7,7 @@
 	</head>
 	<body>
 	<div id="ma_div">
-		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" onload='Init(evt)'>
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
 			<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 1200">
 
 				<foreignObject id="paysage" x="0" y="60px" width="150%" height="100%">
@@ -31,9 +31,47 @@
 								height="100%" type="image/svg+xml" />
 					</object>
 				</foreignObject>
-				</svg>
+				<foreignObject id="panneauptt" x="700px" y="750px"  width="50%" height="50%">
+					<object data="../img/panneau.svg" width="50%"
+						type="image/svg+xml">
+							<embed src="../img/panneau.svg" width="50%"
+								height="50%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<svg xmlns="http://www.w3.org/2000/svg" transform="rotate(340)">
+				  <a xlink:href="./jeu.html" target="_blank">
+					<text id="link" x="450" y="1125">Jouer</text>
+					<!--450 1125-->
+				  </a>
+				</svg> 
+				<!--<foreignObject id="link" x="450px" y="1050px" width="200" height="10%" transform="rotate(-20)">
+						<a href="./jeu.html">Jouer</a>
+				</foreignObject>-->
+				<foreignObject id="panneauptt2" x="150px" y="750px"  width="50%" height="50%">
+					<object data="../img/panneau2.svg" width="50%"
+						type="image/svg+xml">
+							<embed src="../img/panneau2.svg" width="50%"
+								height="50%" type="image/svg+xml" />
+					</object>
+				</foreignObject>
+				<svg xmlns="http://www.w3.org/2000/svg">
+				  <a xlink:href="./aide.html" target="_blank">
+					<text id="link" x="550" y="720" transform="rotate(20)">Aide</text>
+					<!--450 1125-->
+				  </a>
+				</svg> 
 			</svg>
 		</svg>
 	</div>
 	</body>
 </html>
+
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="http://www.w3schools.com/svg/" target="_blank">
+    <text x="0" y="15" fill="red">I love SVG</text>
+  </a>
+</svg> 
+-->
+
