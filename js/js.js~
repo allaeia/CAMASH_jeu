@@ -305,8 +305,8 @@ console.log(x);
 	if(lettre.lettre == lettre_a_trouver)
 	{
 		gagner = true;
-		var texte = "tu as trouver";
-		var texte2 = "bravo";
+		var rejouer = '<svg xmlns="http://www.w3.org/2000/svg"><a xlink:href="./index.html"><text id="link" x="58" y="1070">Rejouer</text></a></svg>';
+		$('#svg1').append(rejouer);
 		mon_audio.changerSon(3,[4]);
 		/*ajax_lecture(texte,texte);
 		window.setTimeout(function(){ajax_lecture(texte2,texte2)},2000);*/
@@ -333,11 +333,6 @@ console.log(x);
 	}
 	else
 	{
-		var texte = "tu as cliquer sur la lettre";
-		var texte2 = "tu dois trouver la lettre";
-		console.log("???"),
-		console.log(lettre);
-		console.log(lettre_a_trouver_obj);
 		mon_audio.changerSon(1,[lettre.idAudio,2,lettre_a_trouver_id_audio]);
 		/*ajax_lecture(texte,texte);
 		son_lettre=son(lettre.lettre);
@@ -474,7 +469,7 @@ function tirer_lettre(n)
 	{
 		tab.push(trouver);
 	}
-	
+	lettre_a_trouver_id_audio=5+index;
 	lettre_a_trouver = trouver;
 	trouver_son=son(trouver);
 	ajax_load_balise(5+index,trouver,trouver_son);
