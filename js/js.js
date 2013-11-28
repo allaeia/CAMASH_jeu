@@ -281,6 +281,13 @@ function Lettre(obj,lettre){
 		}
 	};
 }
+
+function click()
+{
+	console.log('tetst');
+	//$('#curseur').click(function(){$('#ma_div').click()})
+}
+
 function svgElementClicked(theElement)
 {
 	if(gagner)
