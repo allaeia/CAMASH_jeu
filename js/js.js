@@ -285,6 +285,7 @@ function Lettre(obj,lettre){
 function rejouer_consigne()
 {
 	console.log('on rejoue la consigne');
+	mon_audio.changerSon(0,[lettre_a_trouver_id_audio]);
 }
 
 function click()
