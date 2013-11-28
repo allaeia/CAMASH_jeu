@@ -4,6 +4,7 @@ html, body, div {
   margin: 0;
   padding:0;
   background-color: #66EEF4;
+  cursor: url('../img/curseur.png'), pointer;
 }
 
 #texte
