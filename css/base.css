@@ -4,7 +4,22 @@ html, body, div {
   margin: 0;
   padding:0;
   background-color: #66EEF4;
-  cursor: url('../img/curseur.png'), pointer;
+}
+
+body {
+	position : fixed;
+	overflow-y: scroll;
+}
+
+#curseur
+{
+  width:  1600px;
+  height: 1200px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  opacity:0;
+  cursor: url('../img/curseur.cur'), auto;
 }
 
 #texte

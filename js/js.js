@@ -18,7 +18,6 @@ var gagner = false;
 function Init(evt)
 {
 	SVGDocument = evt.target.ownerDocument;
-	SVGRoot = SVGDocument.documentElement;
 	SVGDocument.getElementById("soleil2").setAttributeNS(null, 'visibility', 'hidden');
 	SVGDocument.getElementById("soleil3").setAttributeNS(null, 'visibility', 'hidden');
 

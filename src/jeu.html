@@ -16,8 +16,10 @@
 		</script>
 	</head>
 	<body onLoad="setup();" oncontextmenu="return false;" ondragstart="return false">
+	<div id="curseur">
+	</div>
 	<div id="ma_div">
-		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" onload='Init(evt)'>
+		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" onload='Init(evt)' >
 		<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 1200">
 
 			<foreignObject id="paysage" x="0" y="60px" width="150%" height="100%">
@@ -113,54 +115,6 @@
 			</svg> 
 	</svg>
 </svg>
-<script>			
-/*$('svg').bind('contextmenu', function(e){
-					return false;
-					}); 
-			$('foreignObject').bind('contextmenu', function(e){
-					return false;
-					});
-			$('object').bind('contextmenu', function(e){
-					return false;
-					}); //*/
-</script>
-<script language=JavaScript>
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-/*
-var message="Function Disabled!";
-
-///////////////////////////////////
-function clickIE4(){
-	if (event.button==2){
-		alert(message);
-		return false;
-	}
-}
-
-function clickNS4(e){
-	if (document.layers||document.getElementById&&!document.all){
-		if (e.which==2||e.which==3){
-			alert(message);
-			return false;
-		}
-	}
-}
-
-if (document.layers){
-	document.captureEvents(Event.MOUSEDOWN);
-	document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-	document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-//*/ 
-</script>
 	</div>
 	<div id="audio">
 	</div>
