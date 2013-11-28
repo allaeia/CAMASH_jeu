@@ -12,13 +12,13 @@ VIM / Master SSTIM
 	<body>
 		<script>
 		<!--Les espaces sont ici mis en %20 a titre indicatif-->
-		var message = "Bonjour%20tout%20le%20monde%20!";
+		var message = "Bonjour%20tout%20le%20monde%20";
 		var audioElement = document.createElement('audio');
 		//document.write(navigator.userAgent);
 		if(navigator.userAgent.indexOf("OPR")!=-1 || (navigator.userAgent.indexOf("Linux")!=-1 && navigator.userAgent.indexOf("Firefox")!=-1) )
 		{
 			//document.write("Safari");
-			audioElement.setAttribute('src', "http://api.voicerss.org/?key=***********a&hl=fr-fr&src=%22"+message+"%22&c=wav");//remplacez les étoiles par votre clé
+			audioElement.setAttribute('src', "http://api.voicerss.org/?key=***********&hl=fr-fr&src=%22"+message+"%22&c=wav");//remplacez les étoiles par votre clé
 			audioElement.setAttribute('type', "audio/wav");
 			audioElement.play();
 		}
