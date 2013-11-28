@@ -287,7 +287,7 @@ function click_consigne()
 	console.log('on rejoue la consigne');
 	if(gagner)
 	{
-		document.location.href="./index.html";
+		document.location.href="./jeu.html";
 	}else{
 		mon_audio.changerSon(0,[lettre_a_trouver_id_audio]);
 	}
