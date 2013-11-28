@@ -7,11 +7,6 @@
 	</head>
 	<body>
 	<div id="ma_div">
-		<script>
-			.on("contextmenu", function(data, index) {
-				 alert('test');
-			});
-		</script>
 		<svg id="base"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" >
 			<svg id="svg1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 1200">
 				<foreignObject id="paysage" x="0" y="60px" width="150%" height="100%">
@@ -57,7 +52,8 @@
 					<text class="link" x="550" y="685" transform="rotate(20)">Aide</text>
 				  </a>
 				</svg>
-				<foreignObject class="boite" id="panneauptt" onclick="alert('click')" x="750px" y="725px"  width="50%" height="50%">
+				<script>function jouer(){alert('click');} </script>
+				<foreignObject class="boite" id="panneauptt" onclick="jouer();" x="750px" y="725px"  width="50%" height="50%">
 					<object data="../img/panneau.svg" width="50%"
 						type="image/svg+xml"  >
 							<embed src="../img/panneau.svg" width="50%"
