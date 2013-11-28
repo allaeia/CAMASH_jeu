@@ -282,10 +282,15 @@ function Lettre(obj,lettre){
 	};
 }
 
-function rejouer_consigne()
+function click_consigne()
 {
 	console.log('on rejoue la consigne');
-	mon_audio.changerSon(0,[lettre_a_trouver_id_audio]);
+	if(gagner)
+	{
+		document.location.href="./index.html";
+	}else{
+		mon_audio.changerSon(0,[lettre_a_trouver_id_audio]);
+	}
 }
 
 function click()
@@ -317,8 +322,9 @@ console.log(x);
 	if(lettre.lettre == lettre_a_trouver)
 	{
 		gagner = true;
-		var rejouer = '<svg xmlns="http://www.w3.org/2000/svg"><a xlink:href="./jeu.html"><text id="link" x="58" y="1070">Rejouer</text></a></svg>';
-		$('#svg1').append(rejouer);
+		document.getElementById("consigne").innerHTML="Rejouer";
+		//var rejouer = '<svg xmlns="http://www.w3.org/2000/svg"><a xlink:href="./jeu.html"><text id="link" x="58" y="1070">Rejouer</text></a></svg>';
+		//$('#svg1').append(rejouer);
 		mon_audio.changerSon(3,[4]);
 		/*ajax_lecture(texte,texte);
 		window.setTimeout(function(){ajax_lecture(texte2,texte2)},2000);*/
