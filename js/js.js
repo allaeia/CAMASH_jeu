@@ -282,6 +282,11 @@ function Lettre(obj,lettre){
 	};
 }
 
+function rejouer_consigne()
+{
+	console.log('on rejoue la consigne');
+}
+
 function click()
 {
 	console.log('tetst');
