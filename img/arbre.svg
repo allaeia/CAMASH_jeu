@@ -316,4 +316,5 @@
   <script id="scriptsvg3143">
 	document.oncontextmenu = new Function("return false");
   </script>
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>

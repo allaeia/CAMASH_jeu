@@ -67,4 +67,5 @@ viewBox="0 0 1050 1050"
          y="1035.0469">C</tspan></text>
   </g>
 <script id="scriptsvg4309">document.getElementById("svg4309").addEventListener("click",sendClickToParentDocument,false);function sendClickToParentDocument(evt){var target = evt.target; if(target.correspondingUseElement){target = target.correspondingUseElement;}if (window.parent.svgElementClicked){window.parent.svgElementClicked(target);}else{alert(&quot;You clicked '&quot; + target.id + &quot;' which     is a &quot; + target.nodeName + &quot; element&quot;);}}</script>
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>

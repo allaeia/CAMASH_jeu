@@ -117,4 +117,5 @@
      id="layer2"
      inkscape:label="premier plan"
      transform="translate(4.5590519,-342.28128)" />
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>

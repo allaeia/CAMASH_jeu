@@ -95,4 +95,5 @@
 		}
 	}
   </script>
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>

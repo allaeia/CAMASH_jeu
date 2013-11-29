@@ -85,4 +85,5 @@
          x="40.340038"
          y="116.77381" /></text>
   </g>
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>
