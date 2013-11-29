@@ -80,5 +80,19 @@
        id="path5433"
        inkscape:connector-curvature="0" />
   </g>
-  <script id="scriptsvg3002">document.getElementById("svg3002").addEventListener("click",sendClickToParentDocument,false);function sendClickToParentDocument(evt){var target = evt.target; if(target.correspondingUseElement){target = target.correspondingUseElement;}if (window.parent.svgElementClicked){window.parent.svgElementClicked(target);}else{document.location.href="jeu.html";}}</script>
+  <script id="scriptsvg3002">
+	document.getElementById("svg3002").addEventListener("click",sendClickToParentDocument,false);
+	function sendClickToParentDocument(evt){
+		var target = evt.target;
+		if(target.correspondingUseElement){
+			target = target.correspondingUseElement;
+		}
+		if (window.parent.svgElementClicked){
+			console.log('totl');
+			window.parent.svgElementClicked2param(target,"../src/index.html");
+		}else{
+			window.parent.location.href="../src/index.html";
+		}
+	}
+  </script>
 </svg>

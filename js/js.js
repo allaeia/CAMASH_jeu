@@ -299,6 +299,17 @@ function click()
 	//$('#curseur').click(function(){$('#ma_div').click()})
 }
 
+function svgElementClicked2param(theElement,url)
+{
+	console.log(url);
+	if(url=="")
+	{
+		svgElementClicked(theElement);
+	}else{
+		document.location.href=url;
+	}
+}
+
 function svgElementClicked(theElement)
 {
 	if(gagner)
