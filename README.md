@@ -6,6 +6,10 @@ Autors
 Guénon Marie
 Favreau Jean-Dominique
 
+Language
+--------
+French
+
 Abstract
 -------
 Game for children to learn the alphabet
@@ -18,9 +22,10 @@ How to play
 Technologies used
 -----------------
 
-* html5 / CSS3
-* Javascript / JQuery
-* php / ajax
+* html5 / CSS3 : stucture of the pages
+* SVG : displaying all the images, in order to have a nice visual rendering whatever the screen is.
+* Javascript / JQuery : manage the mouse events, the random draw of the letters, playing the sounds, ...
+* php / ajax : creating the speech syntethis based on voicerss and google.translate text-to-speech web interface.
 
 Contributing
 ------------
