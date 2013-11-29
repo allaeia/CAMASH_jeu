@@ -3,8 +3,7 @@
 
 Autors
 ------
-Guénon Marie \n
-Favreau Jean-Dominique
+Guénon Marie & Favreau Jean-Dominique
 
 Extract
 -------
