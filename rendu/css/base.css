@@ -1,0 +1,33 @@
+html, body, div {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  background-color: #66EEF4;
+}
+
+body {
+	position : fixed;
+	overflow-y: scroll;
+}
+
+#curseur
+{
+  width:  1600px;
+  height: 1200px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  opacity:0;
+  cursor: url('../img/curseur.cur'), auto;
+}
+
+#texte
+{
+	font-size: x-large;
+}
+
+.link
+{
+	font-size: 80px;
+}
