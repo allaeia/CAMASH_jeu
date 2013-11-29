@@ -129,4 +129,5 @@
        inkscape:connector-curvature="0"
        transform="translate(2.28125,830.625)" />
   </g>
+ <script id="script_svg">document.oncontextmenu = new Function("return false");</script>
 </svg>
