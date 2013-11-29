@@ -12,7 +12,7 @@ French
 
 Abstract
 -------
-Game for children to learn the alphabet
+Game for children to learn the alphabet. Originally created and designed for children with intellectual disabilities during one of our courses.
 
 How to play
 -----------
