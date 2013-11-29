@@ -5,6 +5,10 @@ Autors
 ------
 Guénon Marie & Favreau Jean-Dominique
 
+Licence
+-------
+GNU GPLv3
+
 Language
 --------
 French
