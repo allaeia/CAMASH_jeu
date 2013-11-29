@@ -314,10 +314,6 @@
        transform="translate(80.391314,47.909945)" />
   </g>
   <script id="scriptsvg3143">
-	document.getElementById("svg3143").addEventListener("mousedown",sendClickToParentDocument,false);
-	function sendClickToParentDocument(evt){
-		console.log(evt);
-		alert('toto');
-	}
+	document.oncontextmenu = new Function("return false");
   </script>
 </svg>
